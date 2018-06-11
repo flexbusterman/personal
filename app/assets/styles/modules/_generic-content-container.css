@@ -1,0 +1,22 @@
+.generic-content-container {
+  
+  p {
+    font-weight: 300;
+    line-height: 1.65;
+        /* CSS shorthand, clockwise */
+
+    margin: 0 0 1.8rem 0;
+
+    @mixin atSmall {
+      font-size: 1.125rem;
+    }
+  }
+
+  /* descendent selector, selects all links inside a p, to divide unneccessary nesting */
+  p a {
+        /* 400 is default weight */
+
+    font-weight: 700;
+  }
+
+}

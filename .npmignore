@@ -1,0 +1,3 @@
+Had to add this file because NPM uses .gitignore, ignores /lib
+
+https://stackoverflow.com/questions/17990647/npm-install-errors-with-error-enoent-chmod
