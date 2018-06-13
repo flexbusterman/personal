@@ -1,5 +1,3 @@
-/* If screen size is bigger than 530px then increase font size (mobile-first) */
-
 @define-mixin atSmall {
   @media (min-width: 530px) {
     @mixin-content;
