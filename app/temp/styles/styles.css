@@ -521,14 +521,14 @@ a {
   }
 
 .page-section {
-  padding: 1.2rem 0;
+  padding: 0px 0;
 
 }
 
 @media (min-width: 800px) {
 
 .page-section {
-    padding: 4.5rem 0
+    padding: 0rem 0
 
 }
   }
@@ -1020,49 +1020,51 @@ Instead edit gulp/templates/sprite */
 }
 
 .site-header--is-expanded {
-    background-color: rgba(47,85,114, .55);
+    background-color: rgba(0,0,0, .80);
   }
 
 @media (min-width: 800px) {
 
 .site-header {
     position: fixed;
-    background-color: rgba(47,85,114, .3)
-}
+    background-color: rgba(0,0,0, .80)
 
-    .site-header--dark {
+/*    &--dark {
       background-color: rgba(23, 51, 72, .85);
     }
+*/
+}
   }
 
-@media (min-width: 800px) {
-
-.site-header__btn-container {
-      float: right
+/*  &__btn-container {
+    @mixin atMedium {
+      float: right;
+    }
   }
-  }
+*/
 
 .site-header__logo {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%) scale(.8);
-            transform: translateX(-50%) scale(.8);
-    transition: -webkit-transform .3s ease-out;
+    float: right;
+    right: 10px;
+    height: auto;
+    width: auto; 
+    max-width: 200px; 
+    max-height: 20px;
+/*    transform: translateX(-20%) scale(.2);
     transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-    background-color: #2f5572;
-    padding: 25px 36px;
+    transform-origin: 50% 0;
+*/    /*background-color: $mainBlue;*/
   }
+
+/*padding: 0px 10%;*/
 
 @media (min-width: 800px) {
 
 .site-header__logo {
-      left: auto;
-      -webkit-transform: translateX(0);
-              transform: translateX(0)
+      /*left: auto;*/
+      /*transform: translateX(0);*/
   }
 
       .site-header--dark .site-header__logo {
@@ -1191,14 +1193,14 @@ Instead edit gulp/templates/sprite */
 
 @media (min-width: 800px) {
 
-.primary-nav--pull-right {
-      float: right
+.primary-nav--pull-left {
+      float: left
   }
   }
 
 .primary-nav ul {
     margin: 0;
-    padding: 0;
+    padding: 10;
   }
 
 .primary-nav ul::after {
@@ -1234,25 +1236,26 @@ Instead edit gulp/templates/sprite */
   }
 
 .primary-nav a {
-    color: #FFF;
-    font-weight: 300;
+    color: #DDD;
+    font-weight: 150;
     text-decoration: none;
     display: block;
-    padding: 5px 8px;
-    font-size: .8rem;
-    background-color: rgba(47,85,114, .5);
+    padding: 5px 5px;
+    font-size: 1.5rem;
+    background-color: transparent;
   }
+
+/*background-color: rgba(0,0,0, .5);*/
 
 @media (min-width: 800px) {
 
 .primary-nav a {
-      font-size: 1rem;
-      padding: 12px 0;
-      background-color: transparent
+      font-size: 2.0rem;
+      padding: 5px 10
   }
 
       .primary-nav a.is-current-link {
-        color: #fabb69;
+        color: #ffffff;
       }
   }
 
@@ -1352,3 +1355,64 @@ Instead edit gulp/templates/sprite */
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
     }
+
+.intro {
+  position: relative;
+  height: 100vh;
+  /*width: 100vw;*/
+  overflow: hidden;
+}
+
+/*background-size: contain;*/
+
+.intro__image {
+    /*object-fit: cover;*/
+    /*position: absolute;*/
+    /*margin: auto;*/
+    width: 100%;
+    /*transform: translate(-50%, -50%);*/
+  }
+
+/*background: #f00;*/
+
+.intro__sign {
+    /*display: block;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 70%;
+
+    /*max-height: 500px;*/
+    /*right: auto;*/
+  }
+
+.music {
+	position: relative;
+	height: 100vh;
+}
+
+/*width: 100vw;*/
+
+.music li {
+		/*padding-right:2em;*/
+	    list-style: none;
+		/*@mixin clearfix;			*/
+	
+	}
+
+.music__images {
+		position:absolute;
+		left:0;
+		transition: opacity 1s ease-in-out;
+		opacity:0;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+	}
+
+.music__images-opaque {
+		  opacity:1;
+  		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  		filter: alpha(opacity=1);
+	}
