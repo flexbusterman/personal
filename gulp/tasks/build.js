@@ -50,12 +50,14 @@ gulp.task('useminTrigger', ['deleteDistFolder'], function() {
 });
 
 gulp.task('usemin', ['styles', 'scripts'], function() {
+  console.log("Not using usemin");
   return gulp.src("./app/index.html")
-    .pipe(usemin({
-      css: [function() {return rev()}, function() {return cssnano()}],
-      js: [function() {return rev()}, function() {return uglify()}]
-    }))
-    .pipe(gulp.dest("./docs"));
+  //   .pipe(usemin({
+  //     css: [function() {return rev()}, function() {return cssnano()}],
+  //     js: [function() {return rev()}, function() {return uglify()}]
+  //   }))
+  //   // .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+  .pipe(gulp.dest("./docs"));
 });
 
 gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger']);
