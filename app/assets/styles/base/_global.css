@@ -8,10 +8,7 @@ img {
   height: auto;
 }
 
-/* * selects everything */
-
 * {
-	/* tell the browser to make 100% width + padding = 100% */
   box-sizing: border-box;
 }
 

@@ -10,11 +10,10 @@
     max-width: 976px;
   }
 
-
   &--narrow {
     max-width: 470px;
   }
-  
+
   &--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
@@ -34,8 +33,6 @@
       padding-right: 18px;
     }
   }
-
-  /* activates when the wrapper is inside another wrapper */
 
   .wrapper {
     padding-left: 0;

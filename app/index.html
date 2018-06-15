@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <title>Christian Augustin</title>
   <meta name="keywords" content="Musician, producer, creative coder">
   <meta name="description" content="Musician with computers at heart.">
@@ -12,22 +12,81 @@
   <!-- usemin is on the lookout for comments like the ones below this one -->
 
   <!-- build:css assets/styles/styles.css -->
-  <!-- <link rel="stylesheet" href="temp/styles/styles.css"> -->
+  <link rel="stylesheet" href="temp/styles/styles.css">
   <!-- endbuild -->
 
   <!-- build:js assets/scripts/Vendor.js -->
-  <!-- <script src="/temp/scripts/Vendor.js"></script> -->
+  <script src="/temp/scripts/Vendor.js"></script>
   <!-- endbuild -->
 
 </head>
 <body>
 
   <header class="site-header">
-    <h1>Test text</h1>
+    <div class="site-header__logo">
+      <img src="/assets/images/sign-white-small.png">
+    </div>
+
+    <div class="site-header__menu-content">
+      <nav class="primary-nav primary-nav--pull-right">
+        <ul>
+          <li><a href="#music" id="music-link">music</a></li>
+          <li><a href="#code" id="code-link">code</a></li>
+          <li><a href="#discography" id="discography-link">discography</a></li>
+          <li><a href="#about" id="about-link">about</a></li>
+          <li><a href="#contact" id="contact-link">contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <div id="intro" class="page-section intro" data-matching-link="#intro-link">
+    <img class="intro__image" src="/assets/images/intro-bg-1-large.jpg">
+    <img class="intro__sign" src="/assets/images/sign-white-large.png">    
+  </div>
+ 
+   <div id="music" class="page-section music" data-matching-link="#music-link">
+    <div class="music__list">
+      <ul>
+        <li>Augustin</li>
+        <li>Chicagojazzen</li>
+        <li>Dammit I'm Mad</li>
+        <li>Flickstick</li>
+        <li>Kantor</li>
+        <li>KRISPR</li>
+        <li>Riwen</li>
+        <li>Therese Lithner</li>
+      </ul>
+    </div>
+
+    <div class="music__images">
+      <img src="/assets/images/bands-augustin2-medium.jpg">
+      <img src="/assets/images/bands-chicagojazzen-medium.jpg">
+      <img src="/assets/images/bands-dammit-small.jpg">
+      <img src="/assets/images/bands-flickstick-medium.jpg">
+      <img src="/assets/images/bands-kantor-medium.jpg">
+      <img src="/assets/images/bands-krispr-medium.jpg">
+      <img src="/assets/images/bands-riwen-medium.jpg">
+      <img src="/assets/images/bands-lithner-medium.jpg">      
+    </div>
+
+  </div>
+
+  <div id="code" class="page-section code" data-matching-link="#code-link">
+    <img class="code__image" src="/assets/images/code-less-saturation-medium.jpg">
+  </div>
+
+  <div id="discography" class="page-section discography" data-matching-link="#discography-link">
+    <img class="discography__image" src="/assets/images/discography-medium.jpg">
+  </div>
+
+  <div id="about" class="page-section about" data-matching-link="#about-link">
+    <img class="about__image" src="/assets/images/contact.jpg">
+  </div>
+
   <!-- build:js assets/scripts/App.js -->
-  <!-- <script src="/app/scripts/App.js"></script> -->
+  <script src="/temp/scripts/App.js"></script>
   <!-- endbuild -->
+
 </body>
 </html>
