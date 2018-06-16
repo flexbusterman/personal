@@ -1,6 +1,8 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
 }
 
 img {
@@ -13,5 +15,12 @@ img {
 }
 
 a {
-  color: $mainOrange;
+  color: $mainBlue;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
 }

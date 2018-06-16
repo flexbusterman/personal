@@ -1,4 +1,6 @@
 .generic-content-container {
+  /*transition: color 2s ease-out;*/
+  font-family: "Roboto";
   
   p {
     font-weight: 300;
@@ -10,8 +12,15 @@
     }
   }
 
-  p a {
-    font-weight: 700;
+  p {
+    font-weight: 300;
+  }
+
+
+
+  a:hover {
+    color: $mainBlueLight;
+   font-weight: 500;
   }
 
 }

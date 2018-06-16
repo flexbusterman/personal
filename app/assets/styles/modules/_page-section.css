@@ -1,5 +1,6 @@
 .page-section {
   padding: 0px 0;
+  position: relative;
 
   @mixin atMedium {
     padding: 0rem 0;
@@ -31,7 +32,7 @@
 
     @mixin atLarge {
       &.lazyloaded {
-        background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+        /*background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;*/
         background-size: cover;
       }
     }

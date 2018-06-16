@@ -3,8 +3,8 @@
   padding: 10px 0;
   position: absolute;
   width: 100%;
-  z-index: 2;
   transition: all 0.8s ease-out;
+  z-index: 5;
 
   &--visible {
     opacity: 1;
