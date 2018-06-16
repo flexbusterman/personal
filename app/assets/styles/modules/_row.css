@@ -2,7 +2,7 @@
 
   @mixin clearfix;
   z-index: 4;
-  position: relative;
+  position: absolute;
   &--bg-color {
     background-color: rgba(4,4,4,.3);
   }

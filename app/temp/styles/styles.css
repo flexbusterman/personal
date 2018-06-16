@@ -470,6 +470,7 @@ ul {
   }
 
 .wrapper {
+  position: absolute;
   overflow: hidden;
   padding-left: 36px;
   padding-right: 36px;
@@ -641,7 +642,7 @@ ul {
 
 .row {
   z-index: 4;
-  position: relative;
+  position: absolute;
 
 }
 
@@ -1054,7 +1055,7 @@ Instead edit gulp/templates/sprite */
   position: absolute;
   width: 100%;
   transition: all 0.8s ease-out;
-  z-index: 5;
+  z-index: 10;
 }
 
 .site-header--visible {
@@ -1431,16 +1432,16 @@ Instead edit gulp/templates/sprite */
 
 .music {
 	z-index: 1;
-	position: absolute;
+	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-color: #222;
+	background-color: rgba(0,0,0,0.4);
 	overflow: hidden;
 }
 
 .music__images {
 		z-index: -1;
-		position: relative;
+		position: absolute;
 		margin-left: 0px;
 		margin-top: 0px;
 		width: 100%;
@@ -1452,22 +1453,23 @@ Instead edit gulp/templates/sprite */
 	}
 
 .music__images-opaque {
-		position: relative;
-		width: 100%;
 		z-index: -1;
-		opacity: 1;
+		position: absolute;
+		width: 100%;
+		opacity: 0.5;
   		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   		filter: alpha(opacity=1);
 	}
 
 .link {
-	position: relative;
-	z-index: 4;
+	position: absolute;
+	z-index: 5;
 	color: #aaa;
 	font-size: 1.5rem;
 	line-height: 2.3rem;
 	font-weight: 150;
 	transition: color 0.4s ease-in-out;
+	height: 20vh;
 }
 
 .link-active {

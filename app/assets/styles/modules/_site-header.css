@@ -4,7 +4,7 @@
   position: absolute;
   width: 100%;
   transition: all 0.8s ease-out;
-  z-index: 5;
+  z-index: 10;
 
   &--visible {
     opacity: 1;
