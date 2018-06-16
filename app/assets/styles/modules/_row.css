@@ -2,18 +2,19 @@
 
   @mixin clearfix;
   z-index: 4;
-  position: absolute;
+  position: relative;
+
   &--bg-color {
     background-color: rgba(4,4,4,.3);
   }
 
   &--t-padding {
-    margin-top: 12vh;
+    margin-top: 20vh;
     margin-bottom: 12vh;
   }
 
   &--r-padding {
-    margin-right: 10vh;
+    margin-right: 5vh;
   }
 
   &--gutters {
@@ -56,7 +57,7 @@
     }
 
     &__medium-4--larger {
-      width: 37%;
+      width: 40%;
     }
 
     &__medium-6 {

@@ -470,7 +470,7 @@ ul {
   }
 
 .wrapper {
-  position: absolute;
+  position: relative;
   overflow: hidden;
   padding-left: 36px;
   padding-right: 36px;
@@ -642,7 +642,7 @@ ul {
 
 .row {
   z-index: 4;
-  position: absolute;
+  position: relative;
 
 }
 
@@ -657,12 +657,12 @@ ul {
   }
 
 .row--t-padding {
-    margin-top: 12vh;
+    margin-top: 20vh;
     margin-bottom: 12vh;
   }
 
 .row--r-padding {
-    margin-right: 10vh;
+    margin-right: 5vh;
   }
 
 .row--gutters {
@@ -706,7 +706,7 @@ ul {
     }
 
     .row__medium-4--larger {
-      width: 37%;
+      width: 40%;
     }
 
     .row__medium-6 {
@@ -1462,7 +1462,7 @@ Instead edit gulp/templates/sprite */
 	}
 
 .link {
-	position: absolute;
+	position: relative;
 	z-index: 5;
 	color: #aaa;
 	font-size: 1.5rem;
