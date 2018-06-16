@@ -1012,12 +1012,17 @@ Instead edit gulp/templates/sprite */
   }
 
 .site-header {
+  opacity: 0;
   padding: 10px 0;
   position: absolute;
   width: 100%;
   z-index: 2;
-  transition: background-color .3s ease-out;
+  transition: all 0.8s ease-out;
 }
+
+.site-header--visible {
+    opacity: 1;
+  }
 
 .site-header--is-expanded {
     background-color: rgba(0,0,0, .80);
@@ -1065,12 +1070,11 @@ Instead edit gulp/templates/sprite */
 .site-header__logo {
       /*left: auto;*/
       /*transform: translateX(0);*/
+/*
+      .site-header--dark & {
+        transform: scale(.56);
+      }*/
   }
-
-      .site-header--dark .site-header__logo {
-        -webkit-transform: scale(.56);
-                transform: scale(.56);
-      }
   }
 
 .site-header__logo__graphic {

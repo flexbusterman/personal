@@ -31,11 +31,11 @@ class StickyHeader {
       element: this.headerTriggerElement[0],
       handler: function(direction) {
         if (direction == "down") {
-          that.siteHeader.addClass("site-header--dark");
+          that.siteHeader.addClass("site-header--visible");
         } else {
-          that.siteHeader.removeClass("site-header--dark");
+          that.siteHeader.removeClass("site-header--visible");
         }
-      }
+      }, offset: "20%"
     });
   }
 
@@ -51,8 +51,7 @@ class StickyHeader {
             that.headerLinks.removeClass("is-current-link");
             $(matchingHeaderLink).addClass("is-current-link");
           }
-        },
-        offset: "18%"
+        }, offset: "5%"
       });
 
       new Waypoint({
@@ -64,7 +63,7 @@ class StickyHeader {
             $(matchingHeaderLink).addClass("is-current-link");
           }
         },
-        offset: "-40%"
+        offset: "-20%"
       });
     });
   }

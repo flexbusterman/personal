@@ -1,9 +1,14 @@
 .site-header {
+  opacity: 0;
   padding: 10px 0;
   position: absolute;
   width: 100%;
   z-index: 2;
-  transition: background-color .3s ease-out;
+  transition: all 0.8s ease-out;
+
+  &--visible {
+    opacity: 1;
+  }
 
   &--is-expanded {
     background-color: rgba(0,0,0, .80);
@@ -42,10 +47,10 @@
     @mixin atMedium {
       /*left: auto;*/
       /*transform: translateX(0);*/
-
+/*
       .site-header--dark & {
         transform: scale(.56);
-      }
+      }*/
     }
   }
 
