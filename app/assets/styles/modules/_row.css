@@ -1,6 +1,6 @@
 .row {
 
-  z-index: 4;
+  /*z-index: 4;*/
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
@@ -8,22 +8,19 @@
   @mixin clearfix;
 
   &--hidden {
-    visibility: hidden;
-    /*position: 20vh;*/
-    /*position: relative;*/
-    left: 40vh;
+    position: absolute;
+    z-index: -19;
     opacity: 0;
   }
 
   &--visible {
+    position: relative;
+    z-index: 5;
     opacity: 1;
-    /*position: relative;*/
-    left: 40vh;
-    /*opacity: 1;*/
   }
 
   &--bg-color {
-    background-color: rgba(4,4,4,.3);
+    background-color: rgba(0,0,0,.8);
   }
 
   &--t-padding {

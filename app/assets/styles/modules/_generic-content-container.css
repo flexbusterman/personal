@@ -3,8 +3,9 @@
   font-family: "Roboto";
   margin: 1.7rem;
   position: relative;
+  /*background-color: rgba(255,255,255,0.4);*/
   transition: all 0.8s ease-out;
-
+/*
   &--visible {
     z-index: -1;
     opacity: 1;
@@ -13,9 +14,10 @@
   &--hidden {
     z-index: 5;
     opacity: 0;
-  }
+  }*/
 
   p {
+    /*position: relative;*/
     line-height: 1.5rem;
     font-weight: 200;
 

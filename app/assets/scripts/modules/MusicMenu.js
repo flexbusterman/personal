@@ -9,18 +9,20 @@ content.chicagojazzen = 'Chicagojazzen is basically the multifaceted Erik Karlss
 
 $(function() {
 	// var textContainers = $("music-text-row");
-	var textContainers = $("div.generic-content-container");
+	var textContainers = $("div.music-text-row");
 	var links = $('a.link').click(function() {
 		
 		var currentLinkTxt = $(this).text().toLowerCase().split(" ");
 		var currentLinkIndex = $('a.link').index(this)
-		
+	
 		links.removeClass('link-active');
-		textContainers.removeClass("generic-content-container--visible")
-		textContainers.addClass("generic-content-container--hidden")
-		$(textContainers[currentLinkIndex]).removeClass("generic-content-container--hidden")
-		$(textContainers[currentLinkIndex]).addClass("generic-content-container--visible")
 		$(this).addClass('link-active');
+		
+		textContainers.removeClass("row--visible")
+		textContainers.addClass("row--hidden")
+
+		$(textContainers[currentLinkIndex]).removeClass("row--hidden")
+		$(textContainers[currentLinkIndex]).addClass("row--visible")
 		console.log(textContainers[currentLinkIndex])
    });
 

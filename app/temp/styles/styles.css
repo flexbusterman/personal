@@ -647,7 +647,7 @@ ul {
 
 .row {
 
-  z-index: 4;
+  /*z-index: 4;*/
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
@@ -661,22 +661,19 @@ ul {
   }
 
 .row--hidden {
-    visibility: hidden;
-    /*position: 20vh;*/
-    /*position: relative;*/
-    left: 40vh;
+    position: absolute;
+    z-index: -19;
     opacity: 0;
   }
 
 .row--visible {
+    position: relative;
+    z-index: 5;
     opacity: 1;
-    /*position: relative;*/
-    left: 40vh;
-    /*opacity: 1;*/
   }
 
 .row--bg-color {
-    background-color: rgba(4,4,4,.3);
+    background-color: rgba(0,0,0,.8);
   }
 
 .row--t-padding {
@@ -820,21 +817,24 @@ ul {
   font-family: "Roboto";
   margin: 1.7rem;
   position: relative;
+  /*background-color: rgba(255,255,255,0.4);*/
   transition: all 0.8s ease-out;
 
 }
 
-.generic-content-container--visible {
+/*
+  &--visible {
     z-index: -1;
     opacity: 1;
   }
-
-.generic-content-container--hidden {
+  
+  &--hidden {
     z-index: 5;
     opacity: 0;
-  }
+  }*/
 
 .generic-content-container p {
+    /*position: relative;*/
     line-height: 1.5rem;
     font-weight: 200;
   }
@@ -1467,10 +1467,11 @@ Instead edit gulp/templates/sprite */
     /*right: auto;*/
   }
 
-.music__text {
+/*
+	&__text {
 		font-weight: 500;
 		line-height: 2;
-	}
+	}*/
 
 .music__images {
 		z-index: -1;
