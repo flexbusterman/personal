@@ -646,8 +646,11 @@ ul {
   }
 
 .row {
+
   z-index: 4;
   position: relative;
+  opacity: 1;
+  transition: all 0.8s ease-out;
 
 }
 
@@ -655,6 +658,21 @@ ul {
     content: "";
     clear: both;
     display: table;
+  }
+
+.row--hidden {
+    visibility: hidden;
+    /*position: 20vh;*/
+    /*position: relative;*/
+    left: 40vh;
+    opacity: 0;
+  }
+
+.row--visible {
+    opacity: 1;
+    /*position: relative;*/
+    left: 40vh;
+    /*opacity: 1;*/
   }
 
 .row--bg-color {
@@ -801,8 +819,20 @@ ul {
   /*transition: color 2s ease-out;*/
   font-family: "Roboto";
   margin: 1.7rem;
+  position: relative;
+  transition: all 0.8s ease-out;
 
 }
+
+.generic-content-container--visible {
+    z-index: -1;
+    opacity: 1;
+  }
+
+.generic-content-container--hidden {
+    z-index: 5;
+    opacity: 0;
+  }
 
 .generic-content-container p {
     line-height: 1.5rem;

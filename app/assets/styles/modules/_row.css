@@ -1,8 +1,26 @@
 .row {
 
-  @mixin clearfix;
   z-index: 4;
   position: relative;
+  opacity: 1;
+  transition: all 0.8s ease-out;
+
+  @mixin clearfix;
+
+  &--hidden {
+    visibility: hidden;
+    /*position: 20vh;*/
+    /*position: relative;*/
+    left: 40vh;
+    opacity: 0;
+  }
+
+  &--visible {
+    opacity: 1;
+    /*position: relative;*/
+    left: 40vh;
+    /*opacity: 1;*/
+  }
 
   &--bg-color {
     background-color: rgba(4,4,4,.3);
