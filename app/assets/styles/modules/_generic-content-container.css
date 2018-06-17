@@ -1,22 +1,21 @@
 .generic-content-container {
   /*transition: color 2s ease-out;*/
   font-family: "Roboto";
+  margin: 1.7rem;
   
   p {
-    font-weight: 300;
-    line-height: 1.65;
-    margin: 0 0 1.8rem 0;
+    line-height: 1.5rem;
+    font-weight: 200;
 
     @mixin atSmall {
       font-size: 1.125rem;
     }
   }
 
+/*
   p {
     font-weight: 300;
-  }
-
-
+  }*/
 
   a:hover {
     color: $mainBlueLight;

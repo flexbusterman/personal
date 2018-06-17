@@ -53,7 +53,7 @@
 
     &__medium-4 {
       float: left;
-      width: 33.33%;
+      width: 33%;
     }
 
     &__medium-4--larger {
@@ -62,7 +62,7 @@
 
     &__medium-6 {
       float: left;
-      width: 50%;
+      width: 60%;
     }
 
     &__medium-8 {
@@ -77,6 +77,16 @@
   }
 
   @mixin atLarge {
+
+    &__medium-4 {
+      float: left;
+      width: 15%;
+    }
+
+    &__medium-6 {
+      float: left;
+      width: 60%;
+    }
 
     &__b-margin-until-large {
       margin-bottom: 0;

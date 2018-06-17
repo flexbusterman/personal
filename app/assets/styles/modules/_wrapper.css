@@ -3,12 +3,12 @@
   overflow: hidden;
   padding-left: 36px;
   padding-right: 36px;
-  max-width: 1236px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 
   &--medium {
-    max-width: 976px;
+    max-width: 90%;
   }
 
   &--narrow {

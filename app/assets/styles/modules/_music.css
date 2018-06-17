@@ -1,10 +1,9 @@
 .music {
-	z-index: 1;
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	background-color: rgba(0,0,0,0.4);
-	overflow: hidden;
+
+	&__text {
+		font-weight: 500;
+		line-height: 2;
+	}
 
 	&__images {
 		z-index: -1;
@@ -26,7 +25,7 @@
 		z-index: -1;
 		position: absolute;
 		width: 100%;
-		opacity: 0.5;
+		opacity: 1;
   		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   		filter: alpha(opacity=1);
 	}

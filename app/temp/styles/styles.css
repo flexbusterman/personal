@@ -474,14 +474,14 @@ ul {
   overflow: hidden;
   padding-left: 36px;
   padding-right: 36px;
-  max-width: 1236px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 
 }
 
 .wrapper--medium {
-    max-width: 976px;
+    max-width: 90%;
   }
 
 .wrapper--narrow {
@@ -532,7 +532,12 @@ ul {
 
 .page-section {
   padding: 0px 0;
+  z-index: 1;
   position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  overflow: hidden;
 
 }
 
@@ -702,7 +707,7 @@ ul {
 
     .row__medium-4 {
       float: left;
-      width: 33.33%;
+      width: 33%;
     }
 
     .row__medium-4--larger {
@@ -711,7 +716,7 @@ ul {
 
     .row__medium-6 {
       float: left;
-      width: 50%;
+      width: 60%;
     }
 
     .row__medium-8 {
@@ -725,6 +730,16 @@ ul {
   }
 
 @media (min-width: 1010px) {
+
+    .row__medium-4 {
+      float: left;
+      width: 15%;
+    }
+
+    .row__medium-6 {
+      float: left;
+      width: 60%;
+    }
 
     .row__b-margin-until-large {
       margin-bottom: 0;
@@ -785,13 +800,13 @@ ul {
 .generic-content-container {
   /*transition: color 2s ease-out;*/
   font-family: "Roboto";
+  margin: 1.7rem;
 
 }
 
 .generic-content-container p {
-    font-weight: 300;
-    line-height: 1.65;
-    margin: 0 0 1.8rem 0;
+    line-height: 1.5rem;
+    font-weight: 200;
   }
 
 @media (min-width: 530px) {
@@ -801,9 +816,10 @@ ul {
   }
   }
 
-.generic-content-container p {
+/*
+  p {
     font-weight: 300;
-  }
+  }*/
 
 .generic-content-container a:hover {
     color: #9fbee0;
@@ -1403,19 +1419,10 @@ Instead edit gulp/templates/sprite */
   height: 100vh;
   /*width: 100vw;*/
   overflow: hidden;
+  /*background: #f00;*/
 }
 
 /*background-size: contain;*/
-
-.intro__image {
-    /*object-fit: cover;*/
-    /*position: absolute;*/
-    /*margin: auto;*/
-    width: 100%;
-    /*transform: translate(-50%, -50%);*/
-  }
-
-/*background: #f00;*/
 
 .intro__sign {
     /*display: block;*/
@@ -1430,14 +1437,10 @@ Instead edit gulp/templates/sprite */
     /*right: auto;*/
   }
 
-.music {
-	z-index: 1;
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	background-color: rgba(0,0,0,0.4);
-	overflow: hidden;
-}
+.music__text {
+		font-weight: 500;
+		line-height: 2;
+	}
 
 .music__images {
 		z-index: -1;
@@ -1456,7 +1459,7 @@ Instead edit gulp/templates/sprite */
 		z-index: -1;
 		position: absolute;
 		width: 100%;
-		opacity: 0.5;
+		opacity: 1;
   		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   		filter: alpha(opacity=1);
 	}
@@ -1475,4 +1478,14 @@ Instead edit gulp/templates/sprite */
 .link-active {
 		color: #fff;
 		font-weight: 280;
+	}
+
+.bg-image__wide {
+		width: auto;
+		height: 100%;
+	}
+
+.bg-image__tall {
+		width: 100%;
+		height: auto;
 	}
