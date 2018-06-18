@@ -42,6 +42,10 @@
     margin-bottom: 12vh;
   }
 
+  &--less-t-padding {
+    margin-top: 15vh;
+  }
+
   &--r-padding {
     margin-right: 5vh;
   }
