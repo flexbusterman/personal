@@ -1474,6 +1474,13 @@ Instead edit gulp/templates/sprite */
 	}*/
 
 .music__images {
+		-webkit-transform-origin: center;
+		        transform-origin: center;
+		-webkit-transform: translateX(0%);
+		        transform: translateX(0%);
+		-webkit-transform: translateY(0%);
+		        transform: translateY(0%);
+
 		z-index: -1;
 		position: absolute;
 		margin-left: 0px;
@@ -1484,6 +1491,7 @@ Instead edit gulp/templates/sprite */
 		opacity: 0;
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 		filter: alpha(opacity=0);
+
 	}
 
 .music__images-opaque {
