@@ -1,20 +1,9 @@
 .generic-content-container {
-  /*transition: color 2s ease-out;*/
   font-family: "Roboto";
   margin: 1.7rem;
   position: relative;
-  /*background-color: rgba(255,255,255,0.4);*/
   transition: all 0.8s ease-out;
-/*
-  &--visible {
-    z-index: -1;
-    opacity: 1;
-  }
-  
-  &--hidden {
-    z-index: 5;
-    opacity: 0;
-  }*/
+  font-size: 0.9rem;
 
   strong {
     font-family: "Raleway";
@@ -23,7 +12,7 @@
 
   h1 {
     font-family: "Raleway";
-    margin-bottom: 0px;
+    margin-bottom: 0px;    
     font-size: 2rem;
     font-weight: 90;
     line-height: 0.9rem;
@@ -35,6 +24,7 @@
 
 
   a {
+    font-size: 1.0rem;
     font-family: "Raleway";
     @mixin atLarge {
       font-size: 1.5rem;

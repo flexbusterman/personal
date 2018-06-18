@@ -368,6 +368,10 @@ ul {
 	list-style-type: none;
 }
 
+span.gray {
+  color: #999;
+}
+
 .large-hero {
   border-bottom: 10px solid #6597cd;
   position: relative;
@@ -693,6 +697,10 @@ ul {
     margin-bottom: 12vh;
   }
 
+.row--less-t-padding {
+    margin-top: 15vh;
+  }
+
 .row--r-padding {
     margin-right: 5vh;
   }
@@ -876,14 +884,6 @@ ul {
       font-size: 1.5rem
 
   }
-  }
-
-@media (min-width: 1010px) {
-
-.generic-content-container {
-    font-size: 1.5rem
-
-}
   }
 
 .generic-content-container p {
@@ -1670,3 +1670,69 @@ Instead edit gulp/templates/sprite */
 .bg-image__transparent {
 		opacity: 0.2;
 	}
+
+.generic-content-container {
+  font-family: "Roboto";
+  margin: 1.7rem;
+  position: relative;
+  transition: all 0.8s ease-out;
+  font-size: 0.9rem;
+
+}
+
+.generic-content-container strong {
+    font-family: "Raleway";
+    font-weight: 400;
+  }
+
+.generic-content-container h1 {
+    font-family: "Raleway";
+    margin-bottom: 0px;    
+    font-size: 2rem;
+    font-weight: 90;
+    line-height: 0.9rem;
+  }
+
+@media (min-width: 1010px) {
+
+.generic-content-container h1 {
+      font-size: 3.5rem
+  }
+  }
+
+.generic-content-container a {
+    font-size: 1.0rem;
+    font-family: "Raleway";
+
+  }
+
+@media (min-width: 1010px) {
+
+.generic-content-container a {
+      font-size: 1.5rem
+
+  }
+  }
+
+.generic-content-container p {
+    /*position: relative;*/
+    line-height: 1.5rem;
+    font-weight: 200;
+  }
+
+@media (min-width: 530px) {
+
+.generic-content-container p {
+      font-size: 1.125rem
+  }
+  }
+
+/*
+  p {
+    font-weight: 300;
+  }*/
+
+.generic-content-container a:hover {
+    color: #9fbee0;
+   font-weight: 500;
+  }
