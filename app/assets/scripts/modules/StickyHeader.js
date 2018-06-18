@@ -10,6 +10,7 @@ class StickyHeader {
     this.createHeaderWaypoint();
     this.pageSections = $(".page-section");
     this.headerLinks = $(".primary-nav a");
+    this.codeLinks = $("a.code-link");
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
     this.refreshWaypoints();
@@ -23,6 +24,9 @@ class StickyHeader {
 
   addSmoothScrolling() {
     this.headerLinks.smoothScroll();
+    // adding smooth scrolling for code section links
+    this.codeLinks.smoothScroll();
+    
   }
 
   createHeaderWaypoint() {

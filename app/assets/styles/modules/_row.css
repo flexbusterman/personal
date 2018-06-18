@@ -1,9 +1,23 @@
 .row {
 
-  /*z-index: 4;*/
+  z-index: 5;
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
+
+  &__medium-8--center {
+    top: 8vh;
+    float: center;
+    left: auto;
+    right: auto;
+    width: 90%;
+
+    @mixin atLarge{
+      top: 9vh;
+      margin-left: 20%;
+      width: 70%;
+    }
+  }
 
   @mixin clearfix;
 

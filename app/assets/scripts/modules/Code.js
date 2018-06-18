@@ -3,14 +3,26 @@ import $ from 'jquery';
 $(function() {
 	var textContainers = $("div.music-text-row");
 	var images = $('div.music').children('img');
-	var links = $('a.link').click(function() {
+	var musicLinks = $('a.link')
+	var currentLinkIndex;
+
+	var codeLinks = $('a.code-link').click(function() {
 		
 		var currentLinkTxt = $(this).text().toLowerCase().split(" ");
-		var currentLinkIndex = $('a.link').index(this)
+
+
+		// TODO: This shouldn't be hard coded
+		if (currentLinkTxt == "augustin") {
+			currentLinkIndex = 0;
+		}
+
+		if (currentLinkTxt == "krispr") {
+			currentLinkIndex = 5;
+		}
 	
 		// update link classes
-		links.removeClass('link-active');
-		$(this).addClass('link-active');
+		musicLinks.removeClass('link-active');
+		$(musicLinks[currentLinkIndex]).addClass('link-active');
 		
 		// update music text rows classes
 		textContainers.removeClass("row--visible")
@@ -18,7 +30,7 @@ $(function() {
 		$(textContainers[currentLinkIndex]).removeClass("row--hidden")
 		$(textContainers[currentLinkIndex]).addClass("row--visible")
 
-		console.log(images[currentLinkIndex])
+		// console.log(musicLinks[0]);
 
 		// update images classes
 		images.removeClass("music__images-opaque")

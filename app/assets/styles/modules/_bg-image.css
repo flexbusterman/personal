@@ -1,4 +1,8 @@
 .bg-image {
+	position: absolute;
+	z-index: 0;
+	opacity: 1;
+
 	&__wide {
 		width: auto;
 		height: 100%;
@@ -7,6 +11,10 @@
 	&__tall {
 		width: 100%;
 		height: auto;
+	}
+
+	&__transparent {
+		opacity: 0.2;
 	}
 
 }
