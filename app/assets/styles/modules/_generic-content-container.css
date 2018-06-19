@@ -5,6 +5,10 @@
   position: relative;
   /*background-color: rgba(255,255,255,0.4);*/
   transition: all 0.8s ease-out;
+
+  @mixin atSmall {
+    font-size: 1.125rem;
+  }
 /*
   &--visible {
     z-index: -1;
@@ -24,7 +28,7 @@
   h1 {
     font-family: "Raleway";
     margin-bottom: 0px;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 90;
     line-height: 0.9rem;
 
@@ -33,23 +37,24 @@
     }
   }
 
+  p {
+    font-size: 2rem;
+    line-height: 1.2rem;
+    font-weight: 200;
+
+/*    @mixin atSmall {
+      font-size: 1.125rem;
+    }
+*/
+  }
 
   a {
     font-family: "Raleway";
+    font-size: 2rem;    
     @mixin atLarge {
       font-size: 1.5rem;
     }
 
-  }
-
-  p {
-    /*position: relative;*/
-    line-height: 1.5rem;
-    font-weight: 200;
-
-    @mixin atSmall {
-      font-size: 1.125rem;
-    }
   }
 
 /*

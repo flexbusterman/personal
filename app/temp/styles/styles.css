@@ -692,6 +692,10 @@ span.gray {
     background-color: rgba(0,0,0,.8);
   }
 
+.row--bg-color-light {
+    background-color: rgba(255,255,255,.05);
+  }
+
 .row--t-padding {
     margin-top: 20vh;
     margin-bottom: 12vh;
@@ -842,6 +846,14 @@ span.gray {
 
 }
 
+@media (min-width: 530px) {
+
+.generic-content-container {
+    font-size: 1.125rem
+
+}
+  }
+
 /*
   &--visible {
     z-index: -1;
@@ -861,7 +873,7 @@ span.gray {
 .generic-content-container h1 {
     font-family: "Raleway";
     margin-bottom: 0px;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 90;
     line-height: 0.9rem;
   }
@@ -873,8 +885,20 @@ span.gray {
   }
   }
 
+.generic-content-container p {
+    font-size: 2rem;
+    line-height: 1.2rem;
+    font-weight: 200;
+
+/*    @mixin atSmall {
+      font-size: 1.125rem;
+    }
+*/
+  }
+
 .generic-content-container a {
     font-family: "Raleway";
+    font-size: 2rem;
 
   }
 
@@ -883,19 +907,6 @@ span.gray {
 .generic-content-container a {
       font-size: 1.5rem
 
-  }
-  }
-
-.generic-content-container p {
-    /*position: relative;*/
-    line-height: 1.5rem;
-    font-weight: 200;
-  }
-
-@media (min-width: 530px) {
-
-.generic-content-container p {
-      font-size: 1.125rem
   }
   }
 
