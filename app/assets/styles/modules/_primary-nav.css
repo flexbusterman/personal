@@ -36,7 +36,7 @@
   }
 
   a {
-    color: #DDD;
+    color: #aaa;
     font-weight: 150;
     text-decoration: none;
     display: block;
@@ -45,13 +45,14 @@
     background-color: transparent;
     /*background-color: rgba(0,0,0, .5);*/
 
+    &.is-current-link {
+      font-weight: 150;
+      color: #fff;
+    }
+
     @mixin atMedium {
       font-size: 2.0rem;
       padding: 5px 10;
-
-      &.is-current-link {
-        color: #ffffff;
-      }
     }
   }
 }

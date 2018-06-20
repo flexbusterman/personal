@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 class Modal {
   constructor() {
-    this.openModalButton = $(".open-modal");
+    this.openModalLink = $(".open-modal");
     this.modal = $(".modal");
     this.closeModalButton = $(".modal__close");
     this.events();
@@ -10,7 +10,7 @@ class Modal {
 
   events() {
     // clicking the open modal button
-    this.openModalButton.click(this.openModal.bind(this));
+    this.openModalLink.click(this.openModal.bind(this));
 
     // clicking the x close modal button
     this.closeModalButton.click(this.closeModal.bind(this));
@@ -27,6 +27,7 @@ class Modal {
 
   openModal() {
     this.modal.addClass("modal--is-visible");
+    // console.log("open modal pressed")
     return false;
   }
 

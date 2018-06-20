@@ -2,12 +2,16 @@
   text-align: center;
 
   &__icon {
-    background-color: $mainOrange;
+    background-color: $mainBlueDarker;
     display: inline-block;
     margin: 0 5px 5px 5px;
     width: 33%;
     height: 72px;
     position: relative;
+
+    &:hover {
+      background-color: $mainBlue;
+    }
 
     @mixin atSmall {
       width: 72px;
@@ -15,11 +19,24 @@
     }
 
     .icon {
+      transform-origin: center;
       display: block;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
+      transform: translate(-13%, -13%) scale(.5);
+
+      &--left {
+        transform: translate(-14%, -13%) scale(.5);
+      }
+
+      &--shrink {
+        transform: translate(-44%, -44.3%) scale(.075);
+      }
+
+      &--shrink-less {
+        transform: translate(-43%, -43.2%) scale(.1);
+      }
     }
   }
 }

@@ -17,9 +17,11 @@ class StickyHeader {
   }
 
   refreshWaypoints() {
-    this.lazyImages.load(function() {
-      Waypoint.refreshAll();
-    });
+    // don't need this?
+    // this.lazyImages.load(function() {
+    //   Waypoint.refreshAll();
+    // });
+    // console.log("this deactivated in StickyHeader.js")
   }
 
   addSmoothScrolling() {

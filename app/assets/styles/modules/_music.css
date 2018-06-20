@@ -1,18 +1,4 @@
 .music {
-/*
-	&__text {
-		font-weight: 500;
-		line-height: 2;
-	}*/
-/*
-	&__list {
-		a:hover {
-			color: #aaa;
-			font-size: 1.5rem;
-			line-height: 2.3rem;
-			font-weight: 150;
-		}
-	}*/
 
 	&__images {
 		transform-origin: center;
@@ -28,12 +14,7 @@
 		left:0;
 		right:0;
 		bottom:0;
-		/*top:0;*/
 		margin:auto;
-/*		margin-left: 0px;
-		margin-top: 0px;
-		width: 100%;
-		height: auto;*/
 		-webkit-transition: opacity 1s ease-in-out;
 		-moz-transition: opacity 1s ease-in-out;
 		-o-transition: opacity 1s ease-in-out;

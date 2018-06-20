@@ -4,11 +4,8 @@
   position: absolute;
   width: 100%;
   transition: all 0.8s ease-out;
-  z-index: 10;
-
+  z-index: 9;
   font-family: "Raleway";
-  /*color: $mainBlue;*/
-  /*font-weight: 500;*/
   text-decoration: none;
 
   &--visible {
@@ -16,12 +13,12 @@
   }
 
   &--is-expanded {
-    background-color: rgba(0,0,0, .80);
+    background-color: rgba(0,0,0, .2);
   }
   
   @mixin atMedium {
     position: fixed;
-    background-color: rgba(0,0,0, .80);
+    background-color: rgba(0,0,0, .84);
 
 /*    &--dark {
       background-color: rgba(23, 51, 72, .85);

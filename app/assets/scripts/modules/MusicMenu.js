@@ -18,7 +18,7 @@ $(function() {
 		$(textContainers[currentLinkIndex]).removeClass("row--hidden")
 		$(textContainers[currentLinkIndex]).addClass("row--visible")
 
-		console.log(images[currentLinkIndex])
+		// console.log(images[currentLinkIndex])
 
 		// update images classes
 		images.removeClass("music__images-opaque")
