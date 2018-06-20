@@ -342,10 +342,6 @@ template {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #fff;
 }
 
 img {
@@ -357,19 +353,8 @@ img {
   box-sizing: border-box;
 }
 
-a {
-  color: #6597cd;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
 ul {
 	list-style-type: none;
-}
-
-span.gray {
-  color: #999;
 }
 
 .large-hero {
@@ -523,6 +508,10 @@ span.gray {
 
 .wrapper--narrow {
     max-width: 470px;
+  }
+
+.wrapper--wide {
+    max-width: 100%;
   }
 
 .page-section {
@@ -837,43 +826,60 @@ span.gray {
     }
 
 .generic-content-container {
-  /*transition: color 2s ease-out;*/
-  font-family: "Roboto";
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 250;
+  color: #fff;
   margin: 1.7rem;
   position: relative;
-  /*background-color: rgba(255,255,255,0.4);*/
   transition: all 0.8s ease-out;
-
-}
-
-@media (min-width: 530px) {
-
-.generic-content-container {
-    font-size: 1.125rem
-
-}
-  }
-
-/*
-  &--visible {
-    z-index: -1;
-    opacity: 1;
-  }
   
-  &--hidden {
-    z-index: 5;
-    opacity: 0;
-  }*/
+
+
+}
 
 .generic-content-container strong {
     font-family: "Raleway";
-    font-weight: 400;
+    font-size: 1.0rem;
+    font-weight: 500;
+  }
+
+.generic-content-container span.gray {
+    font-size: 1.1rem;
+    color: #999;
+  }
+
+.generic-content-container span.mono {
+    font-family: "Cutive Mono";
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+.generic-content-container a {
+    font-family: "Raleway";
+    font-size: 1.07rem;
+    color: #6597cd;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+@media (min-width: 1010px) {
+
+.generic-content-container a {
+      font-size: 1.5rem
+  }
+  }
+
+.generic-content-container a:hover {
+    color: #9fbee0;
+    font-weight: 500;
   }
 
 .generic-content-container h1 {
     font-family: "Raleway";
-    margin-bottom: 0px;
-    font-size: 1rem;
+    margin-bottom: 0px;    
+    font-size: 2rem;
     font-weight: 90;
     line-height: 0.9rem;
   }
@@ -885,40 +891,31 @@ span.gray {
   }
   }
 
-.generic-content-container p {
-    font-size: 2rem;
-    line-height: 1.2rem;
-    font-weight: 200;
+.generic-content-container__tiny {
+    font-size: 0.9rem;
+    margin: 1.7rem;
+    position: relative;
+    line-height: 1.0rem;
+    color: #ccc;
 
-/*    @mixin atSmall {
-      font-size: 1.125rem;
+  }
+
+.generic-content-container__tiny a {
+      font-size: 1.0rem;
+      font-family: "Raleway";
     }
-*/
-  }
 
-.generic-content-container a {
-    font-family: "Raleway";
-    font-size: 2rem;
+.generic-content-container__tiny span.gray {
+	    font-size: 0.9rem;
+	    color: #666;
+	    font-weight: 300;
+	  }
 
-  }
-
-@media (min-width: 1010px) {
-
-.generic-content-container a {
-      font-size: 1.5rem
-
-  }
-  }
-
-/*
-  p {
-    font-weight: 300;
-  }*/
-
-.generic-content-container a:hover {
-    color: #9fbee0;
-   font-weight: 500;
-  }
+.generic-content-container__tiny span.mono {
+	    font-family: "Cutive Mono";
+	    font-size: 1.05rem;
+	    font-weight: 600;
+	  }
 
 .section-title {
   font-size: 2.55rem;
@@ -1166,6 +1163,11 @@ Instead edit gulp/templates/sprite */
   width: 100%;
   transition: all 0.8s ease-out;
   z-index: 10;
+
+  font-family: "Raleway";
+  /*color: $mainBlue;*/
+  /*font-weight: 500;*/
+  text-decoration: none;
 }
 
 .site-header--visible {
@@ -1532,9 +1534,13 @@ Instead edit gulp/templates/sprite */
   }
 
 /*
-	&__text {
-		font-weight: 500;
-		line-height: 2;
+	&__list {
+		a:hover {
+			color: #aaa;
+			font-size: 1.5rem;
+			line-height: 2.3rem;
+			font-weight: 150;
+		}
 	}*/
 
 .music__images {
@@ -1564,6 +1570,12 @@ Instead edit gulp/templates/sprite */
 		filter: alpha(opacity=0);
 
 	}
+
+/*
+	&__text {
+		font-weight: 500;
+		line-height: 2;
+	}*/
 
 .music__images-augustin {
 		-webkit-transform: translateY(10%);
@@ -1646,6 +1658,12 @@ Instead edit gulp/templates/sprite */
 	}
 
 .link {
+
+
+	font-family: "Raleway";
+  /*color: $mainBlue;*/
+  /*font-weight: 500;*/
+  text-decoration: none;
 	position: relative;
 	z-index: 5;
 	color: #aaa;
@@ -1653,13 +1671,27 @@ Instead edit gulp/templates/sprite */
 	line-height: 2.3rem;
 	font-weight: 150;
 	transition: color 0.4s ease-in-out;
-	height: 20vh;
+
+
+/*	a:hover {
+		font-size: 1.5rem;
+
+	}
+*/
+
 }
+
+/*height: 20vh;*/
 
 .link-active {
 		color: #fff;
 		font-weight: 280;
 	}
+
+/*.link.a:hover {
+	color: #aaa;
+	font-weight: 150;
+}*/
 
 .bg-image {
 	position: absolute;
@@ -1681,69 +1713,3 @@ Instead edit gulp/templates/sprite */
 .bg-image__transparent {
 		opacity: 0.2;
 	}
-
-.generic-content-container {
-  font-family: "Roboto";
-  margin: 1.7rem;
-  position: relative;
-  transition: all 0.8s ease-out;
-  font-size: 0.9rem;
-
-}
-
-.generic-content-container strong {
-    font-family: "Raleway";
-    font-weight: 400;
-  }
-
-.generic-content-container h1 {
-    font-family: "Raleway";
-    margin-bottom: 0px;    
-    font-size: 2rem;
-    font-weight: 90;
-    line-height: 0.9rem;
-  }
-
-@media (min-width: 1010px) {
-
-.generic-content-container h1 {
-      font-size: 3.5rem
-  }
-  }
-
-.generic-content-container a {
-    font-size: 1.0rem;
-    font-family: "Raleway";
-
-  }
-
-@media (min-width: 1010px) {
-
-.generic-content-container a {
-      font-size: 1.5rem
-
-  }
-  }
-
-.generic-content-container p {
-    /*position: relative;*/
-    line-height: 1.5rem;
-    font-weight: 200;
-  }
-
-@media (min-width: 530px) {
-
-.generic-content-container p {
-      font-size: 1.125rem
-  }
-  }
-
-/*
-  p {
-    font-weight: 300;
-  }*/
-
-.generic-content-container a:hover {
-    color: #9fbee0;
-   font-weight: 500;
-  }

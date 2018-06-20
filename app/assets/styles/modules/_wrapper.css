@@ -15,6 +15,10 @@
     max-width: 470px;
   }
 
+  &--wide {
+    max-width: 100%;
+  }
+
 /*  &--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;

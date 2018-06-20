@@ -1,34 +1,51 @@
 .generic-content-container {
-  /*transition: color 2s ease-out;*/
-  font-family: "Roboto";
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 250;
+  color: #fff;
   margin: 1.7rem;
   position: relative;
-  /*background-color: rgba(255,255,255,0.4);*/
   transition: all 0.8s ease-out;
-
-  @mixin atSmall {
-    font-size: 1.125rem;
-  }
-/*
-  &--visible {
-    z-index: -1;
-    opacity: 1;
-  }
-  
-  &--hidden {
-    z-index: 5;
-    opacity: 0;
-  }*/
 
   strong {
     font-family: "Raleway";
-    font-weight: 400;
+    font-size: 1.0rem;
+    font-weight: 500;
+  }
+
+  span.gray {
+    font-size: 1.1rem;
+    color: #999;
+  }
+
+  span.mono {
+    font-family: "Cutive Mono";
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  a {
+    font-family: "Raleway";
+    font-size: 1.07rem;
+    color: $mainBlue;
+    font-weight: 500;
+    text-decoration: none;
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
+  }
+
+  a:hover {
+    color: $mainBlueLight;
+    font-weight: 500;
   }
 
   h1 {
     font-family: "Raleway";
-    margin-bottom: 0px;
-    font-size: 1rem;
+    margin-bottom: 0px;    
+    font-size: 2rem;
     font-weight: 90;
     line-height: 0.9rem;
 
@@ -37,34 +54,32 @@
     }
   }
 
-  p {
-    font-size: 2rem;
-    line-height: 1.2rem;
-    font-weight: 200;
+  &__tiny {
+    font-size: 0.9rem;
+    margin: 1.7rem;
+    position: relative;
+    line-height: 1.0rem;
+    color: #ccc;
 
-/*    @mixin atSmall {
-      font-size: 1.125rem;
+    a {
+      font-size: 1.0rem;
+      font-family: "Raleway";
     }
-*/
+  
+	  span.gray {
+	    font-size: 0.9rem;
+	    color: #666;
+	    font-weight: 300;
+	  }
+
+	  span.mono {
+	    font-family: "Cutive Mono";
+	    font-size: 1.05rem;
+	    font-weight: 600;
+	  }
+
   }
+  
 
-  a {
-    font-family: "Raleway";
-    font-size: 2rem;    
-    @mixin atLarge {
-      font-size: 1.5rem;
-    }
-
-  }
-
-/*
-  p {
-    font-weight: 300;
-  }*/
-
-  a:hover {
-    color: $mainBlueLight;
-   font-weight: 500;
-  }
 
 }

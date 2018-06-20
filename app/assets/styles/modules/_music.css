@@ -4,6 +4,15 @@
 		font-weight: 500;
 		line-height: 2;
 	}*/
+/*
+	&__list {
+		a:hover {
+			color: #aaa;
+			font-size: 1.5rem;
+			line-height: 2.3rem;
+			font-weight: 150;
+		}
+	}*/
 
 	&__images {
 		transform-origin: center;
