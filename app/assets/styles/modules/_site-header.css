@@ -1,7 +1,7 @@
 .site-header {
   opacity: 0;
   padding: 10px 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
   transition: all 0.8s ease-out;
   z-index: 9;
@@ -14,24 +14,9 @@
   }
 
   &--is-expanded {
-    background-color: rgba(0,0,0, .2);
+    background-color: rgba(0,0,0, .85);
   }
   
-  @mixin atMedium {
-    position: fixed;
-    background-color: rgba(0,0,0, .84);
-
-/*    &--dark {
-      background-color: rgba(23, 51, 72, .85);
-    }
-*/  }
-
-/*  &__btn-container {
-    @mixin atMedium {
-      float: right;
-    }
-  }
-*/
   &__logo {
     position: absolute;
     top: 0;
@@ -42,11 +27,6 @@
     width: auto; 
     max-width: 200px; 
     max-height: 20px;
-/*    transform: translateX(-20%) scale(.2);
-    transition: transform .3s ease-out;
-    transform-origin: 50% 0;
-*/    /*background-color: $mainBlue;*/
-    /*padding: 0px 10%;*/
 
     @mixin atMedium {
       visibility: visible;
@@ -108,14 +88,17 @@
   &__menu-icon--close-x {
     &::before {
       transform: rotate(45deg) scaleX(1.25);
+      background-color: #555;
     }
 
     .site-header__menu-icon__middle {
+      background-color: #555;
       opacity: 0;
       transform: scaleX(0);
     }
 
     &::after {
+      background-color: #555;
       transform: rotate(-45deg) scaleX(1.25) translateY(1px);
     }
   }
@@ -126,15 +109,17 @@
     transition: all .3s ease-out;
     position: relative;
     z-index: -10;
-    padding-top: 90px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    padding-right: 20px;
     text-align: center;
 
-    @mixin atMedium {
+/*    @mixin atMedium {
       opacity: 1;
       z-index: 1;
       padding-top: 0;
       transform: scale(1);
-    }
+    }*/
 
     &--is-visible {
       opacity: 1;

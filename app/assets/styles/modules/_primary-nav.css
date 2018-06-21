@@ -1,10 +1,7 @@
 .primary-nav {
-  padding-top: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
   overflow: hidden;
-
-  @mixin atMedium {
-    padding-top: 0;
-  }
 
   &--pull-left {
     @mixin atMedium {
@@ -41,7 +38,7 @@
     font-weight: 150;
     text-decoration: none;
     display: block;
-    padding: 5px 5px;
+    padding: 2px 5px;
     font-size: 1.5rem;
     background-color: transparent;
     /*background-color: rgba(0,0,0, .5);*/
@@ -53,7 +50,7 @@
 
     @mixin atMedium {
       font-size: 2.0rem;
-      padding: 5px 10;
+      /*padding: 5px 10;*/
     }
   }
 }
