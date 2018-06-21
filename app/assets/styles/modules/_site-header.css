@@ -33,8 +33,9 @@
   }
 */
   &__logo {
-    position: relative;
+    position: absolute;
     top: 0;
+    visibility: hidden;
     float: right;
     right: 10px;
     height: auto;
@@ -48,12 +49,7 @@
     /*padding: 0px 10%;*/
 
     @mixin atMedium {
-      /*left: auto;*/
-      /*transform: translateX(0);*/
-/*
-      .site-header--dark & {
-        transform: scale(.56);
-      }*/
+      visibility: visible;
     }
   }
 

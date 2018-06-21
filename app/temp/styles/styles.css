@@ -1168,8 +1168,9 @@ Instead edit gulp/templates/sprite */
 */
 
 .site-header__logo {
-    position: relative;
+    position: absolute;
     top: 0;
+    visibility: hidden;
     float: right;
     right: 10px;
     height: auto;
@@ -1187,12 +1188,7 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 800px) {
 
 .site-header__logo {
-      /*left: auto;*/
-      /*transform: translateX(0);*/
-/*
-      .site-header--dark & {
-        transform: scale(.56);
-      }*/
+      visibility: visible
   }
   }
 
