@@ -1136,6 +1136,7 @@ Instead edit gulp/templates/sprite */
   z-index: 9;
   font-family: "Raleway";
   text-decoration: none;
+  overflow: hidden;
 }
 
 .site-header--visible {
@@ -1304,6 +1305,7 @@ Instead edit gulp/templates/sprite */
 
 .primary-nav {
   padding-top: 10px;
+  overflow: hidden;
 }
 
 @media (min-width: 800px) {
