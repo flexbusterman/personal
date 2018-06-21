@@ -1322,7 +1322,7 @@ Instead edit gulp/templates/sprite */
 
 .primary-nav ul {
     margin: 0;
-    padding: 10;
+    padding: 0;
   }
 
 .primary-nav ul::after {
@@ -1540,21 +1540,24 @@ Instead edit gulp/templates/sprite */
   }
 
 .music__images {
-		-webkit-transform-origin: center;
-		        transform-origin: center;
+		position:absolute;
+		/*transform-origin: center;*/
 		/*transform: translateX(0%);*/
 		/*transform: translateY(0%);*/
+
+		overflow: hidden;
+		-o-object-fit: cover;
+		   object-fit: cover;
 
 		z-index: -1;
 		/*position: absolute;*/
 
-		width:100%;
-		display:block;
-		position:absolute;
-		left:0;
-		right:0;
-		bottom:0;
-		margin:auto;
+		height: 100%;
+		width: 100%;
+
+
+
+		/*display:block;*/
 		transition: opacity 1s ease-in-out;
 		opacity: 0;
 		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1563,91 +1566,33 @@ Instead edit gulp/templates/sprite */
 	}
 
 .music__images-augustin {
-		-webkit-transform: translateY(10%);
-		        transform: translateY(10%);
 	}
 
 .music__images-chicagojazzen {
-		-webkit-transform: translateY(20%);
-		        transform: translateY(20%);
 	}
 
 .music__images-dammit {
-		-webkit-transform: translateY(50%);
-		        transform: translateY(50%);
 	}
 
 .music__images-flickstick {
-		-webkit-transform: translateY(0%);
-		        transform: translateY(0%);
 	}
 
 .music__images-kantor {
-		-webkit-transform: translateY(15%);
-		        transform: translateY(15%);
 	}
-
-@media (min-width: 1010px) {
-
-.music__images-kantor {
-			-webkit-transform: translateY(30%);
-			        transform: translateY(30%)
-	}
-  }
 
 .music__images-krispr {
-		-webkit-transform: translateY(45%);
-		        transform: translateY(45%);
 
 	}
-
-@media (min-width: 1010px) {
-
-.music__images-krispr {
-			-webkit-transform: translateY(54%);
-			        transform: translateY(54%)
-
-	}
-  }
 
 .music__images-riwen {
-		-webkit-transform: translateY(0);
-		        transform: translateY(0);
 	}
-
-@media (min-width: 1010px) {
-
-.music__images-riwen {
-			-webkit-transform: translateY(26%);
-			        transform: translateY(26%)
-	}
-  }
 
 .music__images-lithner {
-		-webkit-transform: translateY(0%);
-		        transform: translateY(0%);
-	}
 
-@media (min-width: 1010px) {
-
-.music__images-lithner {
-			-webkit-transform: translateY(25%);
-			        transform: translateY(25%)
 	}
-  }
 
 .music__images-x {
-		-webkit-transform: translateY(15%);
-		        transform: translateY(15%);
 	}
-
-@media (min-width: 1010px) {
-
-.music__images-x {
-			-webkit-transform: translateY(25%);
-			        transform: translateY(25%)
-	}
-  }
 
 .music__images-opaque {
 		opacity: 1;
@@ -1695,19 +1640,31 @@ Instead edit gulp/templates/sprite */
 	position: absolute;
 	z-index: 0;
 	opacity: 1;
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	overflow: hidden;
 
 }
 
-.bg-image__wide {
+/*	&__wide {
 		width: auto;
 		height: 100%;
 	}
+*/
 
-.bg-image__tall {
-		width: 100%;
-		height: auto;
-	}
+@media (min-width: 800px) {
+
+.bg-image {
+/*		&__tall {
+			width: 100%;
+			height: auto;
+		}*/
+
+}
+  }
 
 .bg-image__transparent {
-		opacity: 0.2;
+		opacity: 0.4;
 	}

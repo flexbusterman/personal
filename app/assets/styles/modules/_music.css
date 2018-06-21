@@ -1,20 +1,29 @@
 .music {
 
+	
+	
+
 	&__images {
-		transform-origin: center;
+		position:absolute;
+		/*transform-origin: center;*/
 		/*transform: translateX(0%);*/
 		/*transform: translateY(0%);*/
+
+		overflow: hidden;
+		object-fit: cover;
 
 		z-index: -1;
 		/*position: absolute;*/
 
-		width:100%;
-		display:block;
-		position:absolute;
-		left:0;
-		right:0;
-		bottom:0;
-		margin:auto;
+		height: 100%;
+		width: 100%;
+
+
+
+		/*display:block;*/
+
+
+
 		-webkit-transition: opacity 1s ease-in-out;
 		-moz-transition: opacity 1s ease-in-out;
 		-o-transition: opacity 1s ease-in-out;
@@ -26,57 +35,32 @@
 	}
 
 	&__images-augustin {
-		transform: translateY(10%);
 	}
 
 	&__images-chicagojazzen {
-		transform: translateY(20%);
 	}
 
 	&__images-dammit {
-		transform: translateY(50%);
 	}
 
 	&__images-flickstick {
-		transform: translateY(0%);
 	}
 
 	&__images-kantor {
-		transform: translateY(15%);
-		@mixin atLarge {
-			transform: translateY(30%);
-		}
 	}
 
 	&__images-krispr {
-		transform: translateY(45%);
-		@mixin atLarge {
-			transform: translateY(54%);
-		}
 
 	}
 
 	&__images-riwen {
-		transform: translateY(0);
-		@mixin atLarge {
-			transform: translateY(26%);
-		}
 	}
 
 	&__images-lithner {
-		transform: translateY(0%);
-		
-		@mixin atLarge {
-			transform: translateY(25%);
-		}
+
 	}
 
 	&__images-x {
-		transform: translateY(15%);
-		
-		@mixin atLarge {
-			transform: translateY(25%);
-		}
 	}
 
 	&__images-opaque {

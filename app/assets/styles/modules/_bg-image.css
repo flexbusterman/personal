@@ -2,19 +2,25 @@
 	position: absolute;
 	z-index: 0;
 	opacity: 1;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	overflow: hidden;
 
-	&__wide {
+/*	&__wide {
 		width: auto;
 		height: 100%;
 	}
-
-	&__tall {
-		width: 100%;
-		height: auto;
+*/
+	@mixin atMedium {
+/*		&__tall {
+			width: 100%;
+			height: auto;
+		}*/
 	}
 
 	&__transparent {
-		opacity: 0.2;
+		opacity: 0.4;
 	}
 
 }
