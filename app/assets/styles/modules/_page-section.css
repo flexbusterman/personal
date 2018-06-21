@@ -1,11 +1,15 @@
 .page-section {
   padding: 0px 0;
-  z-index: 1;
+  z-index: 0;
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0,0,0,0.4);
+  /*background-color: rgba(0,0,0,0.4);*/
   overflow: hidden;
+
+  &__taller {
+    height: 120vh;
+  }
 
   &__dark {
     background-color: rgba(0,0,0,.999999);

@@ -1,9 +1,14 @@
 .row {
 
-  z-index: 5;
+  /*z-index: 2;*/
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
+
+  &__full-if-small {
+    border-top: 20px;
+    width: 100%;
+  }
 
   &__medium-8--center {
     top: 8vh;
@@ -29,7 +34,7 @@
 
   &--visible {
     position: relative;
-    z-index: 5;
+    z-index: 2;
     opacity: 1;
   }
 
