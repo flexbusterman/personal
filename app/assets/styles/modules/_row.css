@@ -6,7 +6,6 @@
   transition: all 0.8s ease-out;
 
   &__full-if-small {
-    border-top: 20px;
     width: 100%;
   }
 
@@ -28,13 +27,13 @@
 
   &--hidden {
     position: absolute;
-    z-index: -19;
+    /*z-index: -19;*/
     opacity: 0;
   }
 
   &--visible {
     position: relative;
-    z-index: 2;
+    /*z-index: 2;*/
     opacity: 1;
   }
 
@@ -48,11 +47,11 @@
 
   &--t-padding {
     margin-top: 20vh;
-    margin-bottom: 12vh;
+    /*margin-bottom: 12vh;*/
   }
 
   &--less-t-padding {
-    margin-top: 15vh;
+    margin-top: 5vh;
   }
 
   &--r-padding {
