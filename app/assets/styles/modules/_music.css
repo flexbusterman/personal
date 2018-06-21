@@ -71,6 +71,14 @@
 		}
 	}
 
+	&__images-x {
+		transform: translateY(15%);
+		
+		@mixin atLarge {
+			transform: translateY(25%);
+		}
+	}
+
 	&__images-opaque {
 		opacity: 1;
   		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";

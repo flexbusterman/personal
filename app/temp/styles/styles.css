@@ -1636,6 +1636,19 @@ Instead edit gulp/templates/sprite */
 	}
   }
 
+.music__images-x {
+		-webkit-transform: translateY(15%);
+		        transform: translateY(15%);
+	}
+
+@media (min-width: 1010px) {
+
+.music__images-x {
+			-webkit-transform: translateY(25%);
+			        transform: translateY(25%)
+	}
+  }
+
 .music__images-opaque {
 		opacity: 1;
   		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
