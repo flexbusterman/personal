@@ -1,11 +1,11 @@
 .row {
 
-  /*z-index: 2;*/
+  /*z-index: ;*/
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
 
-  &__full-if-small {
+  &--full-if-small {
     width: 100%;
   }
 
@@ -46,12 +46,16 @@
   }
 
   &--t-padding {
-    margin-top: 20vh;
+    margin-top: 17vh;
     /*margin-bottom: 12vh;*/
   }
 
   &--less-t-padding {
     margin-top: 5vh;
+  }
+
+  &--more-t-padding {
+    margin-top: 18vh;
   }
 
   &--r-padding {

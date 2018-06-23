@@ -439,11 +439,9 @@ ul {
 .wrapper {
   position: relative;
   overflow: hidden;
-  padding-left: 36px;
-  padding-right: 36px;
+  /*padding-left: 36px;*/
+  /*padding-right: 36px;*/
   max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 
 /*  &--no-padding-until-medium {
     padding-left: 0;
@@ -480,9 +478,13 @@ ul {
 */
 }
 
+/*margin-right: auto;*/
+
 .wrapper--medium {
     max-width: 90%;
   }
+
+/*margin-left: auto;*/
 
 .wrapper--narrow {
     max-width: 470px;
@@ -492,6 +494,10 @@ ul {
     /*padding-left: 0px;*/
     /*padding-right: 0px;*/
     max-width: 100%;
+  }
+
+.wrapper--center {
+    margin: auto;
   }
 
 .page-section {
@@ -526,7 +532,7 @@ ul {
   }
 
 .page-section__dark {
-    background-color: rgba(0,0,0,.999999);
+    background-color: rgba(0,0,0,.90);
   }
 
 @media (min-width: 800px) {
@@ -619,14 +625,14 @@ ul {
 
 .row {
 
-  /*z-index: 2;*/
+  /*z-index: ;*/
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
 
 }
 
-.row__full-if-small {
+.row--full-if-small {
     width: 100%;
   }
 
@@ -674,12 +680,16 @@ ul {
   }
 
 .row--t-padding {
-    margin-top: 20vh;
+    margin-top: 17vh;
     /*margin-bottom: 12vh;*/
   }
 
 .row--less-t-padding {
     margin-top: 5vh;
+  }
+
+.row--more-t-padding {
+    margin-top: 18vh;
   }
 
 .row--r-padding {
@@ -816,7 +826,7 @@ ul {
 .generic-content-container {
 
   font-family: 'Roboto', sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 250;
   color: #fff;
   margin: 1.7rem;
@@ -829,7 +839,7 @@ ul {
 
 .generic-content-container strong {
     font-family: "Raleway";
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     font-weight: 500;
   }
 
@@ -838,19 +848,19 @@ ul {
   }
 
 .generic-content-container span.gray {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #999;
   }
 
 .generic-content-container span.mono {
     font-family: "Cutive Mono";
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     font-weight: 600;
   }
 
 .generic-content-container a {
     font-family: "Raleway";
-    font-size: 1.07rem;
+    font-size: 0.9rem;
     color: #6597cd;
     font-weight: 500;
     text-decoration: none;
@@ -1595,10 +1605,12 @@ Instead edit gulp/templates/sprite */
 	position: relative;
 	z-index: 5;
 	color: #aaa;
-	font-size: 1.4rem;
-	line-height: 2.3rem;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
 	font-weight: 150;
 	transition: color 0.4s ease-in-out;
+	margin-left: 0px;
+	padding-left: 0px;
 
 
 /*	a:hover {
