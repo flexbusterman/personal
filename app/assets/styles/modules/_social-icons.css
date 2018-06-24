@@ -4,8 +4,8 @@
   &__icon {
     background-color: $mainBlueDarker;
     display: inline-block;
-    margin: 0 5px 5px 5px;
-    width: 33%;
+    margin: 5px 5px 5px 5px;
+    width: 72px;
     height: 72px;
     position: relative;
 
@@ -31,7 +31,7 @@
       }
 
       &--shrink {
-        transform: translate(-44%, -44.3%) scale(.075);
+        transform: translate(-44.1%, -44.3%) scale(.075);
       }
 
       &--shrink-less {

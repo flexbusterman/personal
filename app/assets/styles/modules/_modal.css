@@ -16,13 +16,13 @@
   h1 {
     font-family: "Raleway";
     color: #ddd;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 50;
 
     strong {
       font-family: "Raleway";
       color: $mainBlue;
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: 200;
     }
   }
