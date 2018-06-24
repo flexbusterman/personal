@@ -3,7 +3,7 @@
   padding: 10px 0;
   position: fixed;
   width: 100%;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-family: "Raleway";
   text-decoration: none;
   /*overflow: hidden;*/
@@ -45,7 +45,7 @@
 
   &__menu-icon {
 
-    transition: all 0.8s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 20px;
     height: 19px;
     position: absolute;

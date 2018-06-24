@@ -341,13 +341,14 @@ template {
   display: none;
 }
 
-body {
+/*body {
 }
+*/
 
-img {
+/*img {
   max-width: 100%;
   height: auto;
-}
+}*/
 
 * {
   box-sizing: border-box;
@@ -439,8 +440,6 @@ ul {
 .wrapper {
   position: relative;
   overflow: hidden;
-  /*padding-left: 36px;*/
-  /*padding-right: 36px;*/
   max-width: 90%;
 
 /*  &--no-padding-until-medium {
@@ -478,19 +477,17 @@ ul {
 */
 }
 
-/*margin-right: auto;*/
-
 .wrapper--medium {
     max-width: 90%;
   }
-
-/*margin-left: auto;*/
 
 .wrapper--narrow {
     max-width: 470px;
   }
 
 .wrapper--wide {
+    padding: 0px;
+    margin: 0px;
     /*padding-left: 0px;*/
     /*padding-right: 0px;*/
     max-width: 100%;
@@ -501,7 +498,8 @@ ul {
   }
 
 .page-section {
-  padding: 0px 0;
+  padding: 0px;
+  margin: 0px;
   /*z-index: 0;*/
   position: relative;
   height: 100vh;
@@ -528,7 +526,11 @@ ul {
 }
 
 .page-section__taller {
-    height: 120vh;
+    height: 130vh;
+  }
+
+.page-section__full-height {
+    height: 110%;
   }
 
 .page-section__dark {
@@ -626,14 +628,33 @@ ul {
 .row {
 
   /*z-index: ;*/
+/*  margin: 0px;
+  padding: 0px;
+*/  
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
 
 }
 
-.row--full-if-small {
+.row__music-links {
+    width: 70%;
+    padding: 10px 0px 12px 0px;
+    margin-left: 40px;
+  }
+
+.row__full-if-small {
     width: 100%;
+  }
+
+.row__full-if-small--margin {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+  }
+
+.row--large-if-small {
+    width: 90%;
   }
 
 .row__medium-8--center {
@@ -685,7 +706,7 @@ ul {
   }
 
 .row--less-t-padding {
-    margin-top: 5vh;
+    margin-top: 8vh;
   }
 
 .row--more-t-padding {
@@ -829,7 +850,8 @@ ul {
   font-size: 0.9rem;
   font-weight: 250;
   color: #fff;
-  margin: 1.7rem;
+  margin: 1rem;
+  padding: 1px;
   position: relative;
   transition: all 0.8s ease-out;
   
@@ -839,8 +861,8 @@ ul {
 
 .generic-content-container strong {
     font-family: "Raleway";
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 370;
   }
 
 .generic-content-container--center {
@@ -894,30 +916,46 @@ ul {
   }
 
 .generic-content-container__tiny {
-    font-size: 0.9rem;
-    margin: 1.7rem;
+    font-size: 0.7rem;
+    margin: 1rem;
     position: relative;
-    line-height: 1.0rem;
+    line-height: 0.7rem;
     color: #ccc;
+    letter-spacing: -0.3px;
+
 
   }
 
 .generic-content-container__tiny a {
-      font-size: 1.0rem;
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 0.7rem;
       font-family: "Raleway";
     }
 
 .generic-content-container__tiny span.gray {
-	    font-size: 0.9rem;
+	    font-size: 0.7rem;
 	    color: #666;
 	    font-weight: 300;
 	  }
 
 .generic-content-container__tiny span.mono {
 	    font-family: "Cutive Mono";
-	    font-size: 1.05rem;
+	    font-size: 0.8rem;
 	    font-weight: 600;
 	  }
+
+.generic-content-container__tiny strong {
+      display: inline-block;
+      margin-top: 15px;
+      font-family: "Raleway";
+      font-size: 0.7rem;
+      font-weight: 440;
+    }
+
+.generic-content-container__tiny h1 {
+      line-height: 3rem;
+    }
 
 /*font-weight: 1;*/
 
@@ -1130,7 +1168,7 @@ Instead edit gulp/templates/sprite */
   padding: 10px 0;
   position: fixed;
   width: 100%;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
   font-family: "Raleway";
   text-decoration: none;
   /*overflow: hidden;*/
@@ -1178,7 +1216,7 @@ Instead edit gulp/templates/sprite */
 
 .site-header__menu-icon {
 
-    transition: all 0.8s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 20px;
     height: 19px;
     position: absolute;
@@ -1539,21 +1577,17 @@ Instead edit gulp/templates/sprite */
 
 .music__images {
 		position:absolute;
-		/*transform-origin: center;*/
+		-webkit-transform-origin: center;
+		        transform-origin: center;
 		/*transform: translateX(0%);*/
 		/*transform: translateY(0%);*/
 
 		overflow: hidden;
-		-o-object-fit: cover;
-		   object-fit: cover;
-
 		z-index: -1;
 		/*position: absolute;*/
 
 		height: 100%;
-		width: 100%;
-
-
+    	width: auto;
 
 		/*display:block;*/
 		transition: opacity 1s ease-in-out;
@@ -1564,32 +1598,51 @@ Instead edit gulp/templates/sprite */
 	}
 
 .music__images-augustin {
+		/*transform-origin: right;*/
+		-webkit-transform: translateX(-53%);
+		        transform: translateX(-53%);
 	}
 
 .music__images-chicagojazzen {
+		-webkit-transform: translateX(-25%);
+		        transform: translateX(-25%);
 	}
 
 .music__images-dammit {
+		-webkit-transform: translateX(-8%);
+		        transform: translateX(-8%);
 	}
 
 .music__images-flickstick {
+		-webkit-transform: translateY(0%) translateX(-70%);
+		        transform: translateY(0%) translateX(-70%)
 	}
 
 .music__images-kantor {
+		-webkit-transform: translateY(0%) translateX(-30%);
+		        transform: translateY(0%) translateX(-30%)
 	}
 
 .music__images-krispr {
-
+		-webkit-transform: translateY(0%) translateX(-29%);
+		        transform: translateY(0%) translateX(-29%)
 	}
 
 .music__images-riwen {
+		-webkit-transform: translateY(0%) translateX(-19%);
+		        transform: translateY(0%) translateX(-19%)
 	}
 
 .music__images-lithner {
+		-webkit-transform: translateY(0%) translateX(-30%);
+		        transform: translateY(0%) translateX(-30%)
 
 	}
 
 .music__images-x {
+		-webkit-transform: translateY(0%) translateX(-30%);
+		        transform: translateY(0%) translateX(-30%)
+
 	}
 
 .music__images-opaque {
@@ -1605,12 +1658,10 @@ Instead edit gulp/templates/sprite */
 	position: relative;
 	z-index: 5;
 	color: #aaa;
-	font-size: 1.2rem;
-	line-height: 1.5rem;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
 	font-weight: 150;
 	transition: color 0.4s ease-in-out;
-	margin-left: 0px;
-	padding-left: 0px;
 
 
 /*	a:hover {
