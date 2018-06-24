@@ -31,6 +31,8 @@
   }
 
   a {
+    display: inline-block;
+    margin-top: 3px;
     font-family: "Raleway";
     font-size: 0.9rem;
     color: $mainBlue;
@@ -47,6 +49,11 @@
     font-weight: 500;
   }
 
+  &--no-a-space {
+    margin-top: 0px;
+  }
+
+
   h1 {
     font-family: "Raleway";
     margin-bottom: 0px;    
@@ -58,6 +65,21 @@
       font-size: 3.5rem;
     }
   }
+
+  h2 {
+    font-family: "Raleway";
+    margin-top: -2rem;
+    margin-bottom: 20px;    
+    font-size: 2rem;
+    font-weight: 90;
+    line-height: 3rem;
+
+    @mixin atLarge {
+      font-size: 3.5rem;
+    }
+  }
+
+
 
   &__tiny {
     font-size: 0.7rem;

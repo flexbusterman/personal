@@ -26,6 +26,9 @@
 
   &--large-if-small {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
   }
 
   &__medium-8--center {
