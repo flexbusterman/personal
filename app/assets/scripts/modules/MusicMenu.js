@@ -7,7 +7,7 @@ photoCred.dammit = ["Johan Toorell","#fff"];
 photoCred.flickstick = ["Namoo Kim","#fff"];
 photoCred.kantor = ["Kantor","#fff"];
 photoCred.krispr = ["Malin Strömberg","#fff"];
-photoCred.riwen = ["todo","#fff"];
+photoCred.riwen = ["Henrik Wiklund","#fff"];
 photoCred.therese = ["Selma Grönlund","#fff"];
 
 $(function() {
