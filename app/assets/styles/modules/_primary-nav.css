@@ -5,9 +5,21 @@
   /*z-index: 10;*/
 
   &--pull-left {
-    @mixin atMedium {
+    @mixin atSmall {
       float: left;
     }
+  }
+
+  @mixin atSmall {
+    margin-left: 2vw;
+  }
+
+  @mixin atMedium {
+    margin-left: 4vw;
+  }
+
+  @mixin atLarge {
+    margin-left: 2vw;
   }
 
   ul {
@@ -20,8 +32,19 @@
     list-style: none;
     display: inline-block;
     padding-right: 7px;
-    @mixin atMedium {
-      padding-right: 20px;
+
+    @mixin atSmall {
+      padding-right: 0.4vw;
+      padding-left: 1px;
+      margin-left: 0.1vw;
+      float: left;
+      display: block;
+    }
+
+    @mixin atSmall {
+      padding-right: 2vw;
+      padding-left: 1px;
+      margin-left: 0.1vw;
       float: left;
       display: block;
     }
@@ -29,8 +52,9 @@
 
   li:last-child {
     padding-right: 0;
-    @mixin atMedium {
-      padding-right: 20px;
+
+    @mixin atSmall {
+      padding-right: 0px;
     }
   }
 
@@ -49,9 +73,17 @@
       color: #fff;
     }
 
-    @mixin atMedium {
-      font-size: 2.0rem;
+    @mixin atSmall {
+      font-size: 1.2rem;
       /*padding: 5px 10;*/
+      float: left;
     }
+    
+    @mixin atMedium {
+      font-size: 1.5rem;
+      /*padding: 5px 10;*/
+      float: left;
+    }
+
   }
 }

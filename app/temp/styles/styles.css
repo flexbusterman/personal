@@ -1246,8 +1246,16 @@ Instead edit gulp/templates/sprite */
     opacity: 1;
   }
 
-.site-header--is-expanded {
+@media (min-width: 530px) {
 
+.site-header {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    background-color: rgba(0,0,0, .85)
+}
+  }
+
+.site-header--is-expanded {
     /* translate this */
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -1259,17 +1267,20 @@ Instead edit gulp/templates/sprite */
     top: 0;
     visibility: hidden;
     float: right;
-    right: 10px;
+    right: 100px;
     height: auto;
-    width: auto; 
-    max-width: 200px; 
-    max-height: 20px;
+    width: auto;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .site-header__logo {
-      visibility: visible
+      visibility: visible;
+      max-width: 10px;
+      max-height: 10px;
+      margin-right: 10px;
+      -webkit-transform: scale(0.25);
+              transform: scale(0.25)
   }
   }
 
@@ -1278,7 +1289,6 @@ Instead edit gulp/templates/sprite */
   }
 
 .site-header__menu-icon {
-
     transition: all 0.5s ease-in-out;
     width: 20px;
     height: 19px;
@@ -1332,7 +1342,7 @@ Instead edit gulp/templates/sprite */
       transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .site-header__menu-icon {
       display: none
@@ -1366,12 +1376,6 @@ Instead edit gulp/templates/sprite */
     }
 
 .site-header__menu-content {
-
-    /*pointer-events: none;*/
-    /*cursor: default;*/
-    /*text-decoration: none;*/
-    /*color: black;*/
-
     opacity: 0;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -1384,14 +1388,14 @@ Instead edit gulp/templates/sprite */
     text-align: center;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .site-header__menu-content {
       opacity: 1;
-      z-index: 1;
+      z-index: 4;
       padding-top: 0;
-      -webkit-transform: scale(1);
-              transform: scale(1)
+      -webkit-transform: scale(1) translateY(0px);
+              transform: scale(1) translateY(0px)
   }
   }
 
@@ -1399,7 +1403,7 @@ Instead edit gulp/templates/sprite */
       /*pointer-events: auto;*/
       /*cursor: pointer;*/
       opacity: 1;
-      z-index: 1;
+      z-index: 4;
       -webkit-transform: scale(1) translateY(0px);
               transform: scale(1) translateY(0px);
     }
@@ -1412,11 +1416,32 @@ Instead edit gulp/templates/sprite */
 
 /*z-index: 10;*/
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .primary-nav--pull-left {
       float: left
   }
+  }
+
+@media (min-width: 530px) {
+
+.primary-nav {
+    margin-left: 2vw
+}
+  }
+
+@media (min-width: 800px) {
+
+.primary-nav {
+    margin-left: 4vw
+}
+  }
+
+@media (min-width: 1010px) {
+
+.primary-nav {
+    margin-left: 2vw
+}
   }
 
 .primary-nav ul {
@@ -1436,10 +1461,23 @@ Instead edit gulp/templates/sprite */
     padding-right: 7px;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .primary-nav li {
-      padding-right: 20px;
+      padding-right: 0.4vw;
+      padding-left: 1px;
+      margin-left: 0.1vw;
+      float: left;
+      display: block
+  }
+  }
+
+@media (min-width: 530px) {
+
+.primary-nav li {
+      padding-right: 2vw;
+      padding-left: 1px;
+      margin-left: 0.1vw;
       float: left;
       display: block
   }
@@ -1449,10 +1487,10 @@ Instead edit gulp/templates/sprite */
     padding-right: 0;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .primary-nav li:last-child {
-      padding-right: 20px
+      padding-right: 0px
   }
   }
 
@@ -1464,6 +1502,7 @@ Instead edit gulp/templates/sprite */
     padding: 2px 5px;
     font-size: 1.5rem;
     background-color: transparent;
+
   }
 
 /*background-color: rgba(0,0,0, .5);*/
@@ -1473,11 +1512,23 @@ Instead edit gulp/templates/sprite */
       color: #fff;
     }
 
+@media (min-width: 530px) {
+
+.primary-nav a {
+      font-size: 1.2rem;
+      /*padding: 5px 10;*/
+      float: left
+
+  }
+  }
+
 @media (min-width: 800px) {
 
 .primary-nav a {
-      font-size: 2.0rem
+      font-size: 1.5rem;
       /*padding: 5px 10;*/
+      float: left
+
   }
   }
 
@@ -1800,3 +1851,36 @@ Instead edit gulp/templates/sprite */
 	right: 0;
 	font-size: 0.7rem;
 }
+
+.test {
+	position: absolute;
+	z-index: 5;
+	font-size: 2rem;
+	font-family: "Roboto";
+	margin: auto;
+
+}
+
+@media (min-width: 530px) {
+
+.test--small {
+			color: green;
+			font-size: 4rem		
+	}
+  }
+
+@media (min-width: 800px) {
+
+.test--medium {
+			color: green;
+			font-size: 4rem		
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.test--large {
+			color: green;
+			font-size: 4rem		
+	}
+  }

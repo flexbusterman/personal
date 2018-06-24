@@ -1,0 +1,29 @@
+.test {
+	position: absolute;
+	z-index: 5;
+	font-size: 2rem;
+	font-family: "Roboto";
+	margin: auto;
+
+	&--small {
+		@mixin atSmall {
+			color: green;
+			font-size: 4rem;
+		}		
+	}
+
+	&--medium {
+		@mixin atMedium {
+			color: green;
+			font-size: 4rem;
+		}		
+	}
+
+	&--large {
+		@mixin atLarge {
+			color: green;
+			font-size: 4rem;
+		}		
+	}
+
+}
