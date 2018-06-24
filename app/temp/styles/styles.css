@@ -481,6 +481,18 @@ ul {
     max-width: 90%;
   }
 
+.wrapper--medium--center {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.wrapper--smaller--center {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .wrapper--narrow {
     max-width: 470px;
   }
@@ -530,7 +542,7 @@ ul {
   }
 
 .page-section__full-height {
-    height: 110%;
+    height: 100%;
   }
 
 .page-section__dark {
@@ -639,8 +651,16 @@ ul {
 
 .row__music-links {
     width: 70%;
-    padding: 10px 0px 12px 0px;
-    margin-left: 40px;
+    padding: 10px 0px 15px 0px;
+    margin-left: 0px;
+  }
+
+.row--no-b-margin {
+    margin-bottom: 0px;
+  }
+
+.row--small-b-padding {
+    padding-bottom: 30px;
   }
 
 .row__full-if-small {
@@ -696,11 +716,11 @@ ul {
   }
 
 .row--bg-color {
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(10,10,10,.8);
   }
 
 .row--bg-color-light {
-    background-color: rgba(255,255,255,.05);
+    background-color: rgba(255,255,255,.07);
   }
 
 .row--t-padding {
@@ -709,6 +729,10 @@ ul {
   }
 
 .row--less-t-padding {
+    margin-top: 6vh;
+  }
+
+.row--smaller-t-padding {
     margin-top: 8vh;
   }
 
@@ -862,6 +886,10 @@ ul {
 
 }
 
+.generic-content-container--justify {
+    text-align: justify; 
+  }
+
 .generic-content-container strong {
     font-family: "Raleway";
     font-size: 0.9rem;
@@ -869,6 +897,8 @@ ul {
   }
 
 .generic-content-container--center {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 
@@ -928,7 +958,7 @@ ul {
     font-family: "Raleway";
     margin-top: -2rem;
     margin-bottom: 20px;    
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 90;
     line-height: 3rem;
   }
@@ -1169,15 +1199,21 @@ Instead edit gulp/templates/sprite */
   }
 
 .site-footer {
-  background-color: #6597cd;
-  color: #FFF;
-  padding: .5rem 0;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 250;
+  /*background-color: #070707;*/
+  color: #222;
+  padding: 0.5rem 1rem;
   text-align: center;
+  height: 100%;
 }
 
 .site-footer__text {
     display: block;
-    margin-bottom: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 200;
   }
 
@@ -1747,8 +1783,9 @@ Instead edit gulp/templates/sprite */
 }
 
 .about img {
+		position: relative;
 		display: block;
-		width: 75%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 20px;

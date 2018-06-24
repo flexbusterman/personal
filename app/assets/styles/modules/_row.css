@@ -10,8 +10,16 @@
 
   &__music-links {
     width: 70%;
-    padding: 10px 0px 12px 0px;
-    margin-left: 40px;
+    padding: 10px 0px 15px 0px;
+    margin-left: 0px;
+  }
+
+  &--no-b-margin {
+    margin-bottom: 0px;
+  }
+
+  &--small-b-padding {
+    padding-bottom: 30px;
   }
 
   &__full-if-small {
@@ -60,11 +68,12 @@
   }
 
   &--bg-color {
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(10,10,10,.8);
   }
 
+
   &--bg-color-light {
-    background-color: rgba(255,255,255,.05);
+    background-color: rgba(255,255,255,.07);
   }
 
   &--t-padding {
@@ -73,6 +82,10 @@
   }
 
   &--less-t-padding {
+    margin-top: 6vh;
+  }
+
+  &--smaller-t-padding {
     margin-top: 8vh;
   }
 

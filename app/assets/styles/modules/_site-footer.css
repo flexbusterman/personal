@@ -1,12 +1,18 @@
 .site-footer {
-  background-color: $mainBlue;
-  color: #FFF;
-  padding: .5rem 0;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 250;
+  /*background-color: #070707;*/
+  color: #222;
+  padding: 0.5rem 1rem;
   text-align: center;
+  height: 100%;
 
   &__text {
     display: block;
-    margin-bottom: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 200;
 
     @mixin atMedium {
