@@ -1712,20 +1712,113 @@ Instead edit gulp/templates/sprite */
 	}
 
 .music__images-augustin {
-		/*transform-origin: right;*/
-		-webkit-transform: translateX(-53%);
-		        transform: translateX(-53%);
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
+
+@media (min-width: 530px) {
+
+.music__images-augustin {
+			-webkit-transform: translateX(-27%);
+			        transform: translateX(-27%)
+	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-augustin {
+			-webkit-transform: translateX(-5%);
+			        transform: translateX(-5%)
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-augustin {
+			-webkit-transform: translateX(0);
+			        transform: translateX(0);
+			height: auto;
+	    	width: 100%
+	}
+  }
 
 .music__images-chicagojazzen {
 		-webkit-transform: translateX(-25%);
 		        transform: translateX(-25%);
+
 	}
 
-.music__images-dammit {
-		-webkit-transform: translateX(-8%);
-		        transform: translateX(-8%);
+@media (min-width: 530px) {
+
+.music__images-chicagojazzen {
+			-webkit-transform: translateX(-10%);
+			        transform: translateX(-10%)
+
 	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-chicagojazzen {
+			-webkit-transform: translateX(0);
+			        transform: translateX(0);
+			height: auto;
+			width: 100%
+
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-chicagojazzen {
+			-webkit-transform: translateY(-10%);
+			        transform: translateY(-10%)
+
+	}
+  }
+
+.music__images-dammit {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+		height: 105%;
+		width: auto;
+
+	}
+
+@media (min-width: 530px) {
+
+.music__images-dammit {
+			width: 100%;
+			height: auto;
+			-webkit-transform: translateX(0);
+			        transform: translateX(0)
+
+	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-dammit {
+			-webkit-transform: translateX(0%);
+			        transform: translateX(0%);
+			-webkit-transform: translateY(-5%);
+			        transform: translateY(-5%)
+
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-dammit {
+			-webkit-transform: translateX(0);
+			        transform: translateX(0);
+			-webkit-transform: translateY(-10%);
+			        transform: translateY(-10%);
+			height: auto;
+	    	width: 100%
+
+	}
+  }
 
 .music__images-flickstick {
 		-webkit-transform: translateY(0%) translateX(-70%);
