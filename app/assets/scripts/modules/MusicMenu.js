@@ -1,5 +1,15 @@
 import $ from 'jquery';
 
+var photoCred = {};
+photoCred.augustin = ["Ulrika Lindell", "#fff"];
+photoCred.chicagojazzen = ["Andréas Brännström","#000"];
+photoCred.dammit = ["Johan Toorell","#fff"];
+photoCred.flickstick = ["Namoo Kim","#fff"];
+photoCred.kantor = ["Kantor","#fff"];
+photoCred.krispr = ["Malin Strömberg","#fff"];
+photoCred.riwen = ["todo","#fff"];
+photoCred.therese = ["Selma Grönlund","#fff"];
+
 $(function() {
 	var textContainers = $("div.music-text-row");
 	var images = $('div.music').children('img');
@@ -24,6 +34,12 @@ $(function() {
 		images.removeClass("music__images-opaque")
 		$(images[currentLinkIndex]).addClass("music__images-opaque");
 
+		// update photoCred cred text
+		$("div.photo-cred").html("Photo: "+photoCred[currentLinkTxt[0]][0]);
+
+		$("div.photo-cred").css("color", photoCred[currentLinkTxt[0]][1]);
+		// update photoCred color
+		// $("div.photo-cred").css.("color", photoCred[currentLinkTxt[0]][1]);
    });
 });
 

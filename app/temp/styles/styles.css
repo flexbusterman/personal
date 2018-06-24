@@ -341,9 +341,9 @@ template {
   display: none;
 }
 
-/*body {
+body {
+	background-color: #000;
 }
-*/
 
 /*img {
   max-width: 100%;
@@ -941,8 +941,9 @@ ul {
   }
 
 .generic-content-container__tiny {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     margin: 1rem;
+    margin-bottom: 8vh;
     position: relative;
     line-height: 0.7rem;
     color: #ccc;
@@ -954,19 +955,20 @@ ul {
 .generic-content-container__tiny a {
       display: inline-block;
       margin-top: 15px;
-      font-size: 0.7rem;
+      margin-bottom: 1px;
+      font-size: 0.75rem;
       font-family: "Raleway";
     }
 
 .generic-content-container__tiny span.gray {
-	    font-size: 0.7rem;
+	    font-size: 0.75rem;
 	    color: #666;
 	    font-weight: 300;
 	  }
 
 .generic-content-container__tiny span.mono {
 	    font-family: "Cutive Mono";
-	    font-size: 0.8rem;
+	    font-size: 0.85rem;
 	    font-weight: 600;
 	  }
 
@@ -974,7 +976,7 @@ ul {
       display: inline-block;
       margin-top: 15px;
       font-family: "Raleway";
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       font-weight: 440;
     }
 
@@ -1751,3 +1753,13 @@ Instead edit gulp/templates/sprite */
 		margin-right: auto;
 		margin-bottom: 20px;
 	}
+
+.photo-cred {
+	z-index: 5;
+	color: #fff;
+	font-weight: 250;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 0.7rem;
+}
