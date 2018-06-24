@@ -1,24 +1,17 @@
 .music {
 
-	
-	
-
 	&__images {
 		position:absolute;
-		/*transform-origin: center;*/
+		transform-origin: center;
 		/*transform: translateX(0%);*/
 		/*transform: translateY(0%);*/
 
 		overflow: hidden;
-		object-fit: cover;
-
 		z-index: -1;
 		/*position: absolute;*/
 
 		height: 100%;
-		width: 100%;
-
-
+    	width: auto;
 
 		/*display:block;*/
 
@@ -35,32 +28,42 @@
 	}
 
 	&__images-augustin {
+		/*transform-origin: right;*/
+		transform: translateX(-53%);
 	}
 
 	&__images-chicagojazzen {
+		transform: translateX(-25%);
 	}
 
 	&__images-dammit {
+		transform: translateX(-8%);
 	}
 
 	&__images-flickstick {
+		transform: translateY(0%) translateX(-70%)
 	}
 
 	&__images-kantor {
+		transform: translateY(0%) translateX(-30%)
 	}
 
 	&__images-krispr {
-
+		transform: translateY(0%) translateX(-29%)
 	}
 
 	&__images-riwen {
+		transform: translateY(0%) translateX(-19%)
 	}
 
 	&__images-lithner {
+		transform: translateY(0%) translateX(-30%)
 
 	}
 
 	&__images-x {
+		transform: translateY(0%) translateX(-30%)
+
 	}
 
 	&__images-opaque {

@@ -1,14 +1,23 @@
 .page-section {
-  padding: 0px 0;
-  z-index: 1;
+  padding: 0px;
+  margin: 0px;
+  /*z-index: 0;*/
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0,0,0,0.4);
+  /*background-color: rgba(0,0,0,0.4);*/
   overflow: hidden;
 
+  &__taller {
+    height: 130vh;
+  }
+
+  &__full-height {
+    height: 110%;
+  }
+
   &__dark {
-    background-color: rgba(0,0,0,.999999);
+    background-color: rgba(0,0,0,.90);
   }
 
   @mixin atMedium {

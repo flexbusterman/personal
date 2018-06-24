@@ -1,9 +1,32 @@
 .row {
 
-  z-index: 5;
+  /*z-index: ;*/
+/*  margin: 0px;
+  padding: 0px;
+*/  
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
+
+  &__music-links {
+    width: 70%;
+    padding: 10px 0px 12px 0px;
+    margin-left: 40px;
+  }
+
+  &__full-if-small {
+    width: 100%;
+  }
+
+  &__full-if-small--margin {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+  }
+
+  &--large-if-small {
+    width: 90%;
+  }
 
   &__medium-8--center {
     top: 8vh;
@@ -23,13 +46,13 @@
 
   &--hidden {
     position: absolute;
-    z-index: -19;
+    /*z-index: -19;*/
     opacity: 0;
   }
 
   &--visible {
     position: relative;
-    z-index: 5;
+    /*z-index: 2;*/
     opacity: 1;
   }
 
@@ -42,12 +65,16 @@
   }
 
   &--t-padding {
-    margin-top: 20vh;
-    margin-bottom: 12vh;
+    margin-top: 17vh;
+    /*margin-bottom: 12vh;*/
   }
 
   &--less-t-padding {
-    margin-top: 15vh;
+    margin-top: 8vh;
+  }
+
+  &--more-t-padding {
+    margin-top: 18vh;
   }
 
   &--r-padding {

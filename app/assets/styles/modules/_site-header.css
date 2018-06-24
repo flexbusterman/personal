@@ -3,17 +3,23 @@
   padding: 10px 0;
   position: fixed;
   width: 100%;
-  transition: all 0.8s ease-out;
-  z-index: 9;
+  transition: all 0.5s ease-in-out;
   font-family: "Raleway";
   text-decoration: none;
-  overflow: hidden;
+  /*overflow: hidden;*/
+  z-index: 3;
+
+  /* translate this */
+  transform: translateY(-90px);
 
   &--visible {
     opacity: 1;
   }
 
   &--is-expanded {
+
+    /* translate this */
+    transform: translateY(0px);
     background-color: rgba(0,0,0, .85);
   }
   
@@ -38,10 +44,13 @@
   }
 
   &__menu-icon {
+
+    transition: all 0.5s ease-in-out;
     width: 20px;
     height: 19px;
     position: absolute;
     z-index: 10;
+    transform: translateY(90px);
     top: 10px;
     right: 10px;
 
@@ -54,7 +63,7 @@
       height: 3px;
       background-color: #FFF;
       transform-origin: 0 0;
-      transition: transform .3s ease-out;
+      transition: transform .3s ease-in-out;
     }
 
     &__middle {
@@ -64,7 +73,7 @@
       width: 20px;
       height: 3px;
       background-color: #FFF;
-      transition: all .3s ease-out;
+      transition: all .3s ease-in-out;
       transform-origin: 0 50%;
     }
 
@@ -77,7 +86,7 @@
       height: 3px;
       background-color: #FFF;
       transform-origin: 0 100%;
-      transition: transform .3s ease-out;
+      transition: transform .3s ease-in-out;
     }
 
     @mixin atMedium {
@@ -86,6 +95,10 @@
   }
 
   &__menu-icon--close-x {
+
+    transform: translateY(0px);
+
+
     &::before {
       transform: rotate(45deg) scaleX(1.25);
       background-color: #555;
@@ -104,9 +117,15 @@
   }
 
   &__menu-content {
+
+    /*pointer-events: none;*/
+    /*cursor: default;*/
+    /*text-decoration: none;*/
+    /*color: black;*/
+
     opacity: 0;
     transform: scale(1.2);
-    transition: all .3s ease-out;
+    transition: all .3s ease-in-out;
     position: relative;
     z-index: -10;
     padding-top: 0px;
@@ -114,17 +133,19 @@
     padding-right: 20px;
     text-align: center;
 
-/*    @mixin atMedium {
+    @mixin atMedium {
       opacity: 1;
       z-index: 1;
       padding-top: 0;
       transform: scale(1);
-    }*/
+    }
 
     &--is-visible {
+      /*pointer-events: auto;*/
+      /*cursor: pointer;*/
       opacity: 1;
       z-index: 1;
-      transform: scale(1);
+      transform: scale(1) translateY(0px);
     }
   }
 }

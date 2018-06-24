@@ -1,18 +1,14 @@
 .link {
 
-
 	font-family: "Raleway";
-  /*color: $mainBlue;*/
-  /*font-weight: 500;*/
-  text-decoration: none;
+  	text-decoration: none;
 	position: relative;
 	z-index: 5;
 	color: #aaa;
-	font-size: 1.5rem;
-	line-height: 2.3rem;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
 	font-weight: 150;
-	transition: color 0.4s ease-in-out;
-	/*height: 20vh;*/
+	transition: color 0.4s ease-in-out;	
 
 	&-active {
 		color: #fff;
