@@ -46,34 +46,43 @@
   </header>
 
   <div id="intro" class="page-section intro" data-matching-link="#intro-link">
+
+<!--     <div class="test">
+      <div class="test--small">Small</div>
+      <div class="test--medium">Medium</div>
+      <div class="test--large">Large</div>
+    </div> -->
+
     <img class="bg-image bg-image__tall" src="/assets/images/intro-bg-1-medium.jpg" srcset="/assets/images/intro-bg-1-large.jpg 1071w, /assets/images/intro-bg-1-huge.jpg 2592w">
     <img class="intro__sign" src="/assets/images/sign-white-large.png">    
   </div>
  
-  <div id="music" class="page-section page-section__taller music" data-matching-link="#music-link">
+  <div id="music" class="page-section page-section__taller--unless-large music" data-matching-link="#music-link">
 
-    <img class="music__images music__images-augustin" src="bands-augustin2-small.jpg" srcset="/assets/images/bands-augustin2-medium.jpg 800w, /assets/images/bands-augustin2-large.jpg 1600w, /assets/images/bands-augustin2-huge.jpg 4032w">
+    <img class="music__images music__images-augustin" src="bands-augustin2-small.jpg" srcset="/assets/images/bands-augustin2-medium.jpg 400w, /assets/images/bands-augustin2-large.jpg 800w, /assets/images/bands-augustin2-huge.jpg 2000w">
 
-    <img class="music__images-chicagojazzen music__images" src="bands-chicagojazzen-small.jpg" srcset="/assets/images/bands-chicagojazzen-medium.jpg 800w, /assets/images/bands-chicagojazzen-large.jpg 1600w, /assets/images/bands-chicagojazzen-huge.jpg 2500w">
+    <img class="music__images-chicagojazzen music__images" src="bands-chicagojazzen-small.jpg" srcset="/assets/images/bands-chicagojazzen-medium.jpg 400w, /assets/images/bands-chicagojazzen-large.jpg 800w, /assets/images/bands-chicagojazzen-huge.jpg 2000w">
+
+    <img class="music__images-dammit music__images" src="bands-dammit-small.jpg" srcset="/assets/images/bands-dammit-medium.jpg 400w, /assets/images/bands-dammit-large.jpg 800w, /assets/images/bands-dammit-huge.jpg 2000w">
   
-    <!-- TODO: make responsive -->
-    <img class="music__images-dammit music__images" src="/assets/images/bands-dammit-small.jpg">
-
-    <img class="music__images-flickstick music__images" src="/assets/images/bands-flickstick-small.jpg" srcset="/assets/images/bands-flickstick-medium.jpg 800w, /assets/images/bands-flickstick-large.jpg 1600w, /assets/images/bands-flickstick-huge.jpg 4912w">
+    <img class="music__images-flickstick music__images" src="/assets/images/bands-flickstick-small.jpg" srcset="/assets/images/bands-flickstick-medium.jpg 400w, /assets/images/bands-flickstick-large.jpg 800w, /assets/images/bands-flickstick-huge.jpg 3000w">
 
     <img class="music__images-kantor music__images" src="/assets/images/bands-kantor-small.jpg" srcset="/assets/images/bands-kantor-medium.jpg 800w, /assets/images/bands-kantor-large.jpg 1600w, /assets/images/bands-kantor-huge.jpg 4032w">
 
-    <img class="music__images-krispr music__images" src="/assets/images/bands-krispr-small.jpg" srcset="/assets/images/bands-krispr-medium.jpg 800w, /assets/images/bands-krispr-large.jpg 1600w, /assets/images/bands-krispr-huge.jpg 2592w">
+    <img class="music__images-krispr music__images" src="/assets/images/bands-krispr-small.jpg" srcset="/assets/images/bands-krispr-medium.jpg 400w, /assets/images/bands-krispr-large.jpg 800w, /assets/images/bands-krispr-huge.jpg 2000w">
 
-    <img class="music__images-riwen music__images" src="/assets/images/bands-riwen-small.jpg" srcset="/assets/images/bands-riwen-medium.jpg 800w, /assets/images/bands-riwen-large.jpg 1600w, /assets/images/bands-riwen-huge.jpg 5616w">
+    <img class="music__images-riwen music__images" src="/assets/images/bands-riwen-small.jpg" srcset="/assets/images/bands-riwen-medium.jpg 400w, /assets/images/bands-riwen-large.jpg 800w, /assets/images/bands-riwen-huge.jpg 2000w">
 
-    <img class="music__images-lithner music__images" src="/assets/images/bands-lithner-small-i.jpg" srcset="/assets/images/bands-lithner-medium-i.jpg 800w, /assets/images/bands-lithner-large-i.jpg 1600w, /assets/images/bands-lithner-huge-i.jpg 3712w">
+    <img class="music__images-lithner music__images" src="/assets/images/bands-lithner-small.jpg" srcset="/assets/images/bands-lithner-medium.jpg 400w, /assets/images/bands-lithner-large.jpg 800w, /assets/images/bands-lithner-huge.jpg 2000w">
 
-    <img class="music__images-x music__images music__images-opaque" src="/assets/images/bands-intro-dammit-small.jpg" srcset="/assets/images/bands-intro-dammit-medium.jpg 800w, /assets/images/bands-intro-dammit-large.jpg 1600w, /assets/images/bands-intro-dammit-huge.jpg 3000w">
+    <img class="music__images-x music__images music__images-opaque" src="/assets/images/bands-intro-dammit-small.jpg" srcset="/assets/images/bands-intro-dammit-medium.jpg 400w, /assets/images/bands-intro-dammit-large.jpg 800w, /assets/images/bands-intro-dammit-huge.jpg 2000w">
 
-    <div class="wrapper--wide">
+    <div class="wrapper wrapper--medium--center">
       <div class="row">
-        <div class="row--t-padding  row--bg-color row__music-links music-links">
+      <!-- <div class="row row--gutters"> -->
+
+        <div class="row row--t-margin row__medium-4 row--bg-color row__music-links music-links">
+        <!-- <div class="row--t-margin __medium-4 row--bg-color row__music-links music-links"> -->
           <div class="music__list">
             <ul>
               <li><a href="#augustin" id="augustin-link" class="link">Augustin</a></li>
@@ -88,8 +97,8 @@
           </div>        
         </div>
 
-        <div class="row--less-t-padding row--bg-color row__full-if-small row--hidden music-text-row augustin">
-          <div class="generic-content-container">
+        <div class="row--less-t-margin row--l-margin-if-large row--bg-color row__medium-6 row--hidden music-text-row augustin">
+          <div class="generic-content-container generic-content-container--justify">
             <p class="music__text">
               Electronic solo project utilizing <strong>Ableton Live</strong> and <strong>SuperCollider</strong>.<br>
               <br>
@@ -100,8 +109,8 @@
           </div>
         </div>
 
-        <div class="row--less-t-padding row--bg-color row__medium-6 row--hidden music-text-row chicagojazzen">
-          <div class="generic-content-container">
+        <div class="row--less-t-margin row--l-margin-if-large row--bg-color row__medium-6 row--hidden music-text-row chicagojazzen">
+          <div class="generic-content-container generic-content-container--justify">
             <p class="music__text">
               <strong>Chicagojazzen</strong> is basically the multifaceted <strong>Erik Karlsson</strong>. Based in <strong>Skellefteå</strong>, he has released no less than eight albums since 2006 - digitally, on tape and on disc, on underground labels like <strong>Zeon Light</strong>, <strong>Periferin</strong> and <strong>Irrlicht</strong>. It all began with <strong>Erik</strong> getting an USB-microphone as Christmas gift. Since then, he has refused to relate to any genre boundaries in his multi-instrumental music creation. As a red thread we instead find a messy, brutal DIY-spirit combined with references to <strong>Västerbotten</strong>.<br>
               <br>
@@ -114,8 +123,8 @@
           </div>
         </div>
 
-        <div class="row--less-t-padding row--bg-color row__medium-6 row--hidden music-text-row dammit">
-          <div class="generic-content-container">
+        <div class="row--less-t-margin row--l-margin-if-large row--bg-color row__medium-6 row--hidden music-text-row dammit">
+          <div class="generic-content-container generic-content-container--justify">
             <p class="music__text">
               Duo with <strong>Anton Toorell</strong> (<strong>Invader Ace</strong>, <strong>Receptacles</strong>, <strong>The Ägg</strong>).<br>
               <br>
@@ -126,8 +135,8 @@
           </div>
         </div>
 
-        <div class="row--less-t-padding row--bg-color row__medium-6 row--hidden music-text-row flickstick">
-          <div class="generic-content-container">
+        <div class="row--less-t-margin row--l-margin-if-large row--bg-color row__medium-6 row--hidden music-text-row flickstick">
+          <div class="generic-content-container generic-content-container--justify">
             <p class="music__text">
               <strong>Flickstick</strong> is a <strong>German-Swedish-Finnish</strong> contemporary jazz group that was founded in late 2008 in <strong>Sweden</strong>. From the beginning onwards the group was playing original compositions - written by <strong>Birgitta Flick</strong> and <strong>Lisa Stick</strong>.<br>
               <br>
@@ -139,8 +148,8 @@
           </div>
         </div>
 
-        <div class="row--less-t-padding row--bg-color row__medium-6 row--hidden music-text-row kantor">
-          <div class="generic-content-container">
+        <div class="row--less-t-margin row--l-margin-if-large row--bg-color row__medium-6 row--hidden music-text-row kantor">
+          <div class="generic-content-container generic-content-container--justify">
             <p class="music__text">
               The story of <strong>Kantor</strong> took off on the tour bus during a <strong>Cult of Luna</strong> tour through <strong>North America</strong> in 2013. <strong>Christian Augustin</strong> and <strong>David Johansson</strong> (<strong>Kongh</strong>, <strong>Oscillotron</strong>, <strong>Switchblade</strong>), both touring members of said post-metal outfit, realized they had a common passion for the experimental and the weird end of the electronic music spectrum, and decided to form a new band together. <strong>Kantor</strong> was born.<br>
               <br>
@@ -152,8 +161,8 @@
           </div>
         </div>
 
-        <div class="row--less-t-padding row--bg-color row__medium-6 row--hidden music-text-row krispr">
-          <div class="generic-content-container">
+        <div class="row--less-t-margin row--l-margin-if-large row--bg-color row__medium-6 row--hidden music-text-row krispr">
+          <div class="generic-content-container generic-content-container--justify">
             <p class="music__text">
               <strong>KRISPR</strong> is a musical group formed in <strong>Umeå</strong> in 2016 consisting of <strong>Christian Augustin</strong> (SuperCollider and MIDI controllers) and <strong>Anders Winterstam</strong> (pianos and MIDI controllers). The music is largely electronic and built on chance, improvisation, code and sonic exploration. The different compositions are not so much “songs” as foundations for improvisation and exploration of chance within certain boundaries.<br>
               <br>
@@ -166,19 +175,18 @@
         </div>
 
 
-        <div class="row--less-t-padding row--bg-color row__medium-6 row--hidden music-text-row riwen">
-          <div class="generic-content-container">
+        <div class="row--less-t-margin row--l-margin-if-large row--bg-color row__medium-6 row--hidden music-text-row riwen">
+          <div class="generic-content-container generic-content-container--justify">
             <p class="music__text">
-              Hardcore band created in 2013 by <strong>Johannes Persson</strong> (<strong>Cult of Luna</strong>, <strong>Khoma</strong>).<br>
+              Hardcore band that started in 2013.<br>
               <br>
               <a href="https://www.facebook.com/riwenhc/" target="_blank">Facebook</a>
             </p>
           </div>
         </div>
 
-
-        <div class="row--less-t-padding row--bg-color row__medium-6 row--hidden music-text-row therese">
-          <div class="generic-content-container">
+        <div class="row--less-t-margin row--l-margin-if-large row--bg-color row__medium-6 row--hidden music-text-row therese">
+          <div class="generic-content-container generic-content-container--justify">
             <p class="music__text">
               With a past in bands like <strong>Vaken</strong> and <strong>My Sound of Silence</strong>, <strong>Therese Lithner</strong> was an active part of <strong>Umeå</strong>s flourishing pop scene in the early 2010's.<br>
               <br>
@@ -192,14 +200,18 @@
 
 
       </div>
+      <div class="generic-content-container photo-cred">
+      </div>
     </div>
   </div>
+
+
 
   <div id="code" class="page-section page-section__dark" data-matching-link="#code-link">
     <img class="bg-image" src="/assets/images/code-less-saturation-small.jpg" srcset="/assets/images/code-less-saturation-medium.jpg 800w, /assets/images/code-less-saturation-large.jpg 1600w, /assets/images/code-less-saturation-huge.jpg 3840w">
 
-    <div class="row row__full-if-small--padding row--more-t-padding row--bg-color code">
-      <div class="generic-content-container">
+    <div class="row row__full--until-small row--more-t-margin row--bg-color code">
+      <div class="generic-content-container generic-content-container--no-a-space">
         <h1>Coding Blog</h1>
         <br>
         <a href="http://blog.christianaugustin.com/" target="_blank">console.log(”Augustin”)</a>
@@ -213,27 +225,28 @@
         <a href="http://www.christianaugustin.com/old/" target="_blank">2016 version of this site</a> A generative keyjazzing musical experience.<br>
       </div>
     </div>
+
   </div>
 
   <div id="discography" class="page-section page-section__full-height discography" data-matching-link="#discography-link">
 
     <img class="bg-image" src="/assets/images/discography-small.jpg" srcset="/assets/images/discography-medium.jpg 800w, /assets/images/discography-large.jpg 1600w, /assets/images/discography-huge.jpg 6016w">
 
-    <div class="row row--t-padding row--bg-color discography">
-      <div class="generic-content-container generic-content-container__tiny">
+    <div class="row__full--until-small row--t-margin row--bg-color discography">
+      <div class="generic-content-container generic-content-container__tiny discography-reveal-trigger">
         <h1>discography</h1>
-        <br><strong><span class="mono">1999</span> Sinequanon (split with Anticrust)</strong><span class="gray"><br>7" | hardcore / punk | drums</span>
+        <br><strong><span class="mono">1999</span> Sinequanon (split w/ Anticrust)</strong><span class="gray"><br>7" | hardcore / punk | drums</span>
         <br><a href="spotify:album:7wJg5i1LhpfJhC4XT8BTFn"><span class="mono">2002</span> Totalt Jävla Mörker - Det Ofrivilliga Lidandets Maskineri</a><span class="gray"><br>CD / LP | hardcore / punk / metal | bass</span>
-        <br><a href="spotify:album:23hsq6wf2T7PSkmRMmyhmv"><span class="mono">2002</span> Totalt Jävla Mörker (split with They Fear The Reclaim)</a> <span class="gray"><br>7" | hardcore / punk / metal | bass</span>
+        <br><a href="spotify:album:23hsq6wf2T7PSkmRMmyhmv"><span class="mono">2002</span> Totalt Jävla Mörker (split w/ They Fear The Reclaim)</a> <span class="gray"><br>7" | hardcore / punk / metal | bass</span>
         <br><a href="spotify:album:7sVNLnMkr92Q9jNkhD0JHu"><span class="mono">2004</span> Totalt Jävla Mörker - Människans Ringa Värde</a><span class="gray"><br>CD / LP | hardcore / punk / metal | bass</span>
         <br><a href="spotify:album:0CVR2cZxtJ8AeDpQXst3lx"><span class="mono">2006</span> Totalt Jävla Mörker - S/T</a><span class="gray"><br>CD / LP | hardcore / punk / metal | drums</span>
-        <br><a href="spotify:album:5UvPj9HRpLi3yRtAuiVBVs"><span class="mono">2006</span> Totalt Jävla Mörker (split with Human Waste)</a><span class="gray"><br>7 |" hardcore / punk / metal | drums</span>
+        <br><a href="spotify:album:5UvPj9HRpLi3yRtAuiVBVs"><span class="mono">2006</span> Totalt Jävla Mörker (split w/ Human Waste)</a><span class="gray"><br>7 |" hardcore / punk / metal | drums</span>
         <br><a href="spotify:album:74HlSwYLFSkwhvaP4JPuji"><span class="mono">2007</span> Soldier One - S/T</a><span class="gray"><br>7" | electronic hardcore | guitar / composition / production</span>
         <br><a href="spotify:album:2YrCk8D0sA2WCbynwFo6jt"><span class="mono">2009</span> Totalt Jävla Mörker - Söndra & Härska</a><span class="gray"><br>CD / LP | hardcore / punk / metal | drums</span>
         <br><a href="spotify:album:53f34q5esRa4ZBV6f6rkMz"><span class="mono">2010</span> Ára - O</a><span class="gray"><br>CD | pop / jazz / folk | drums</span>
         <br><a href="spotify:album:3nEiUD4phX3KRim1bsHbtO"><span class="mono">2010</span> DJ Scheißefritz - Raumfahrer</a><span class="gray"><br>DIGITAL | experimental / electronic | composition / production</span>
         <br><a href="spotify:album:5yC4ceHJs0MDDmNTe0Lqjo"><span class="mono">2011</span> Soldier One - Witnessing the Orchestration of Time</a><span class="gray"><br>CD | electronic hardcore | guitar / composition / production</span>
-        <br><strong><span class="mono">2014</span> Dammit I'm Mad - Golden Oldies (split w Chicagojazzen)</strong><span class="gray"><br>CASSETTE | indie / electro / pop | drums / production</span>
+        <br><strong><span class="mono">2014</span> Dammit I'm Mad - Golden Oldies (w/ Chicagojazzen)</strong><span class="gray"><br>CASSETTE | indie / electro / pop | drums / production</span>
         <br><a href="spotify:album:7Meg3lrGNrRXVxkotp3Nr6"><span class="mono">2014</span> Riwen - S/T</a><span class="gray"><br>LP | hardcore / punk | drums</span>
         <br><a href="spotify:album:5HievPELzrjVwquxc7sACI"><span class="mono">2014</span> Ára - Vuoste Virdái</a><span class="gray"><br>CD | pop / jazz / folk | drums</span>
         <br><strong><span class="mono">2014</span> Flickstick - Hymn</strong><span class="gray"><br>CD | contemporary jazz | drums</span>
@@ -252,31 +265,44 @@
     </div>
   </div>
 
-  <div id="about" class="page-section page-section__dark about" data-matching-link="#about-link">
-    <div class="wrapper wrapper--wide">
-      <div class="row row__medium-4 row--r-padding row--less-t-padding">
-          <img class="about__image" src="/assets/images/contact.jpg">
+  <div id="about" class="page-section page-section__full-height about" data-matching-link="#about-link">
+    <div class="wrapper--smaller-until-medium-center">
+
+      <div class="row">
+
+        <div class="row row__about-picture row--t-margin row__medium-4 row--less-l-margin-if-large row__b-margin-at-large">
+            <img class="about__image" src="/assets/images/contact.jpg">
+        </div>
+
+        <div class="row--less-t-margin row--less-l-margin-if-large row--bg-color row__medium-6 row__b-margin-at-large about-reveal-trigger">
+          <div class="generic-content-container generic-content-container--justify">
+            <h2>Christian Augustin</h2>
+            <p>
+              Born 1983 in <strong>Stockholm</strong>, <strong>Sweden</strong>.<br>
+              Moved 1986 to <strong>Skellefteå</strong> but grew up in <strong>Kåge</strong>, 14km further north. Started playing violin at the age of 6 but switched to drums and tracking electronic music at the age of 14. Got involved with hardcore (punk) music in local bands, <strong>Totalt Jävla Mörker</strong> among others.<br>
+              <br>
+              Studied music and jazz drumming at a few different schools, most recently bachelor at <strong>The Royal College of Music</strong> in <strong>Stockholm</strong>. Moved to <strong>Oslo</strong> after the studies, freelancing as a member of different bands as well as touring drummer with <strong>Cult of Luna</strong> and <strong>pg.lost</strong>.<br>
+              <br>
+              The last years has mainly been about a revitalized interest in electronic music production and creative coding.<br>
+              <br>
+              Currently living in <strong>Stockholm</strong>.
+            </p>
+          </div>
+        </div>
+
+
+
       </div>
 
-      <div class="row row__medium-6 row--bg-color-light row--less-t-padding">
-        <div class="generic-content-container">
-          <h1>Christian Augustin</h1>
-          <p>
-            Born 1983 in <strong>Stockholm</strong>, <strong>Sweden</strong>.<br>
-            Moved 1986 to <strong>Skellefteå</strong> but grew up in <strong>Kåge</strong>, 14km further north. Started playing violin at the age of 6 but switched to drums and tracking electronic music at the age of 14. Got involved with hardcore (punk) music in local bands, <strong>Totalt Jävla Mörker</strong> among others.<br>
-            <br>
-            Studied music and jazz drumming at a few different schools, most recently bachelor at <strong>The Royal College of Music</strong> in <strong>Stockholm</strong>. Moved to <strong>Oslo</strong> after the studies, freelancing as a member of different bands as well as touring drummer with <strong>Cult of Luna</strong> and <strong>pg.lost</strong>.<br>
-            <br>
-            The last years has mainly been about a revitalized interest in electronic music production and creative coding.<br>
-            <br>
-            Currently living in <strong>Stockholm</strong>.
-          </p>
-        </div>
-      </div>
 
     </div>
   </div>
 
+  <footer class="site-footer">
+    <div class="wrapper--wide">
+      <span class="site-footer site-footer__text">Copyright &copy; 2018 Christian Augustin. All rights reserved.</span>
+    </div>
+  </footer>
 
   <div class="modal">
     <div class="modal__inner">
