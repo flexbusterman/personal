@@ -1,7 +1,11 @@
 .wrapper {
-  position: relative;
-  overflow: hidden;
+  /*position: relative;*/
+  /*overflow: hidden;*/
   max-width: 90%;
+  height: 100%;
+  /* temp */
+  z-index: 20;
+  background-color: rgba(255,0,0,.5);
 
   &--medium {
     max-width: 90%;

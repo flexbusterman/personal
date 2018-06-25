@@ -13,10 +13,30 @@
     text-align: justify; 
   }
 
+  @mixin atSmall {
+    font-size: 1.2rem;
+    font-weight: 100;
+  }
+
+  @mixin atMedium {
+    padding: 0.2rem;
+    font-size: 1.35rem;
+    font-weight: 100;
+  }
+  
+  @mixin atLarge {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 100;
+  }
+
   strong {
     font-family: "Raleway";
-    font-size: 0.9rem;
     font-weight: 370;
+
+    @mixin atSmall {
+      font-weight: 400;
+    }
   }
 
   &--center {
@@ -26,13 +46,11 @@
   }
 
   span.gray {
-    font-size: 0.9rem;
     color: #999;
   }
 
   span.mono {
     font-family: "Cutive Mono";
-    font-size: 0.9rem;
     font-weight: 600;
   }
 
@@ -40,14 +58,10 @@
     display: inline-block;
     margin-top: 3px;
     font-family: "Raleway";
-    font-size: 0.9rem;
     color: $mainBlue;
     font-weight: 500;
     text-decoration: none;
 
-    @mixin atLarge {
-      font-size: 1.5rem;
-    }
   }
 
   a:hover {

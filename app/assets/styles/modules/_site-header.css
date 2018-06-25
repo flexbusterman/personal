@@ -6,10 +6,8 @@
   transition: all 0.5s ease-in-out;
   font-family: "Raleway";
   text-decoration: none;
-  /*overflow: hidden;*/
   z-index: 3;
 
-  /* translate this */
   transform: translateY(-90px);
 
   &--visible {
@@ -22,7 +20,6 @@
   }
 
   &--is-expanded {
-    /* translate this */
     transform: translateY(0px);
     background-color: rgba(0,0,0, .85);
   }
@@ -37,11 +34,22 @@
     width: auto; 
 
     @mixin atSmall {
-      visibility: visible;
+      /*visibility: visible;*/
       max-width: 10px;
       max-height: 10px;
-      margin-right: 10px;
-      transform: scale(0.25);
+      margin-right: 38px;
+      transform: scale(0.32) translateY(0px);
+    }
+
+    @mixin atMedium {
+      visibility: visible;
+      margin-right: 50px;
+      transform: scale(0.35) translateY(0px);
+    }
+
+    @mixin atLarge {
+      margin-right: 75px;
+      transform: scale(0.4) translateY(-5px);
     }
   }
 

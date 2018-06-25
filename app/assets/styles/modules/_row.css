@@ -1,17 +1,16 @@
 .row {
 
-  /*z-index: ;*/
-/*  margin: 0px;
-  padding: 0px;
-*/  
   position: relative;
   opacity: 1;
   transition: all 0.8s ease-out;
+
+  @mixin clearfix;
 
   &__music-links {
     width: 70%;
     padding: 10px 0px 15px 0px;
     margin-left: 0px;
+    max-width: 350px;
   }
 
   &--no-b-margin {
@@ -24,6 +23,11 @@
 
   &__full-if-small {
     width: 100%;
+
+    @mixin atLarge {
+      width: 25%;
+    }
+
   }
 
   &__full-if-small--margin {

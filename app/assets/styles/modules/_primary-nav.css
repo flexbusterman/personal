@@ -19,7 +19,7 @@
   }
 
   @mixin atLarge {
-    margin-left: 2vw;
+    margin-left: 2.5vw;
   }
 
   ul {
@@ -41,7 +41,7 @@
       display: block;
     }
 
-    @mixin atSmall {
+    @mixin atMedium {
       padding-right: 2vw;
       padding-left: 1px;
       margin-left: 0.1vw;
@@ -68,22 +68,25 @@
     background-color: transparent;
     /*background-color: rgba(0,0,0, .5);*/
 
+    @mixin atSmall {
+      font-size: 1.5rem;
+      float: left;
+    }
+    
+    @mixin atMedium {
+      font-size: 1.8rem;
+    }
+
+   @mixin atLarge {
+      font-size: 2rem;
+    }
+
     &.is-current-link {
       font-weight: 150;
       color: #fff;
     }
 
-    @mixin atSmall {
-      font-size: 1.2rem;
-      /*padding: 5px 10;*/
-      float: left;
-    }
-    
-    @mixin atMedium {
-      font-size: 1.5rem;
-      /*padding: 5px 10;*/
-      float: left;
-    }
+
 
   }
 }

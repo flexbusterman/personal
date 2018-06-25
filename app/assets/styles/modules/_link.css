@@ -15,6 +15,21 @@
 		font-weight: 280;
 	}
 
+	@mixin atSmall {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	@mixin atMedium {
+		font-size: 1.55rem;
+		line-height: 2.2rem;
+	}
+
+	@mixin atLarge {
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+	}
+
 
 /*	a:hover {
 		font-size: 1.5rem;
