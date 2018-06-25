@@ -48,8 +48,8 @@
     }
 
     @mixin atLarge {
-      margin-right: 75px;
-      transform: scale(0.4) translateY(-5px);
+      margin-right: 100px;
+      transform: scale(0.42) translateY(4px);
     }
   }
 

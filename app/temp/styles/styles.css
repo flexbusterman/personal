@@ -1302,9 +1302,9 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 1010px) {
 
 .site-header__logo {
-      margin-right: 75px;
-      -webkit-transform: scale(0.4) translateY(-5px);
-              transform: scale(0.4) translateY(-5px)
+      margin-right: 100px;
+      -webkit-transform: scale(0.42) translateY(4px);
+              transform: scale(0.42) translateY(4px)
   }
   }
 
@@ -1557,12 +1557,17 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 1010px) {
 
 .primary-nav a {
-      font-size: 2rem
+      font-size: 2.5rem
 
 
 
   }
   }
+
+/*@mixin atLarge {
+      font-size: 2rem;
+    }
+*/
 
 .primary-nav a.is-current-link {
       font-weight: 150;
@@ -1946,8 +1951,8 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 1010px) {
 
 .link {
-		font-size: 1.8rem;
-		line-height: 2.5rem
+		font-size: 2rem;
+		line-height: 3rem
 
 }
   }

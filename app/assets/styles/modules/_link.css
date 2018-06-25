@@ -13,7 +13,7 @@
 	font-weight: 150;
 	transition: color 0.4s ease-in-out;
 	margin-left: -10px;
-	
+
 	&-active {
 		color: #fff;
 		font-weight: 280;
@@ -30,8 +30,8 @@
 	}
 
 	@mixin atLarge {
-		font-size: 1.8rem;
-		line-height: 2.5rem;
+		font-size: 2rem;
+		line-height: 3rem;
 	}
 
 
