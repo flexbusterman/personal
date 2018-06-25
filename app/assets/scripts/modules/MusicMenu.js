@@ -3,7 +3,7 @@ import $ from 'jquery';
 var photoCred = {};
 photoCred.augustin = ["Ulrika Lindell", "#fff"];
 photoCred.chicagojazzen = ["Andréas Brännström","#000"];
-photoCred.dammit = ["Johan Toorell","#fff"];
+photoCred.dammit = ["John Arthur","#000"];
 photoCred.flickstick = ["Namoo Kim","#fff"];
 photoCred.kantor = ["Kantor","#fff"];
 photoCred.krispr = ["Malin Strömberg","#fff"];
