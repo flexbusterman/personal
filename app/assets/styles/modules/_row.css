@@ -37,7 +37,7 @@
 
   &--l-margin-if-large {
     @mixin atLarge {
-      margin-left: 10vh;
+      margin-left: 10vw;
     }
   }
 
@@ -55,6 +55,11 @@
 
   &--more-t-margin {
     margin-top: 18vh;
+
+    @mixin atMedium {
+      margin-top: 25vh;
+    }
+
   }
 
   &--gutters {
@@ -116,6 +121,16 @@
 
     &__medium-8--smaller {
       width: 63%;
+    }
+
+    &__full--until-small {
+      width: 100%;
+
+      @mixin atMedium {
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
   }

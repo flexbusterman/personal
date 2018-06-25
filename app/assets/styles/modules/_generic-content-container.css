@@ -59,7 +59,7 @@
 
   a {
     display: inline-block;
-    margin-top: 3px;
+    margin-top: 5px;
     font-family: "Raleway";
     color: $mainBlue;
     font-weight: 500;
@@ -72,7 +72,7 @@
     font-weight: 500;
   }
 
-  &--no-a-space {
+  &--no-a-space a {
     margin-top: 0px;
   }
 
@@ -113,16 +113,28 @@
     color: #ccc;
     letter-spacing: -0.3px;
 
+    @mixin atSmall {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.35rem;
+    }
+    
+    @mixin atLarge {
+      font-size: 1.6rem;
+      line-height: 1.5rem;
+    }
+
     a {
       display: inline-block;
       margin-top: 15px;
       margin-bottom: 1px;
-      font-size: 0.75rem;
       font-family: "Raleway";
     }
   
 	  span.gray {
-	    font-size: 0.75rem;
 	    color: #666;
 	    font-weight: 300;
 	  }
@@ -131,13 +143,26 @@
 	    font-family: "Cutive Mono";
 	    font-size: 0.85rem;
 	    font-weight: 600;
+
+      @mixin atSmall {
+        font-size: 1.4rem;
+        line-height: 1.2rem;
+      }
+
+      @mixin atMedium {
+        font-size: 1.55rem;
+      }
+      
+      @mixin atLarge {
+        font-size: 1.8rem;
+      }
+
 	  }
 
     strong {
       display: inline-block;
       margin-top: 15px;
       font-family: "Raleway";
-      font-size: 0.75rem;
       font-weight: 440;
     }
 
