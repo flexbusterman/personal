@@ -17,10 +17,14 @@
     margin-right: auto;
   }
 
-  &--smaller--center {
+  &--smaller-until-medium-center {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+
+    @mixin atMedium {
+      max-width: 90%;
+    }
   }
 
   &--narrow {
