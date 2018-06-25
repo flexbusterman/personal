@@ -12,6 +12,13 @@
     height: 130vh;
   }
 
+  &__taller--unless-large {
+    height: 130vh;
+    @mixin atLarge {
+      height: 100vh;
+    }
+  }
+
   &__full-height {
     height: 100%;
   }

@@ -2,14 +2,18 @@
 
 	font-family: "Raleway";
   	text-decoration: none;
-	position: relative;
+
+  	/* test */
+	/*position: relative;*/
+
 	z-index: 5;
 	color: #aaa;
 	font-size: 1.3rem;
 	line-height: 1.6rem;
 	font-weight: 150;
-	transition: color 0.4s ease-in-out;	
-
+	transition: color 0.4s ease-in-out;
+	margin-left: -10px;
+	
 	&-active {
 		color: #fff;
 		font-weight: 280;

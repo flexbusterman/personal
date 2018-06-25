@@ -5,10 +5,13 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	margin-bottom: 0.1rem;
+	margin-right: 0.1rem;
 	font-size: 0.7rem;
 
 	@mixin atSmall {
 		font-size: 1rem;
 		font-weight: 300;
 	}
+
 }
