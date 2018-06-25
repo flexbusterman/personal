@@ -1559,7 +1559,8 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 1010px) {
 
 .primary-nav {
-    margin-left: 2.5vw
+    margin-left: 2.5vw;
+    margin-bottom: 3px
 }
   }
 
