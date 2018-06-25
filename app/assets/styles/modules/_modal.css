@@ -39,6 +39,10 @@
     width: 100%;
     top: 50%;
     transform: translateY(-59%);
+
+    @mixin atSmall {
+      top: 46%;
+    }
   }
 
   &__description {

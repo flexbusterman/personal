@@ -1731,6 +1731,13 @@ Instead edit gulp/templates/sprite */
             transform: translateY(-59%);
   }
 
+@media (min-width: 530px) {
+
+.modal__inner {
+      top: 46%
+  }
+  }
+
 .modal__description {
     text-align: center;
     font-size: 1.3rem;
@@ -2272,6 +2279,7 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 530px) {
 
 .photo-cred {
+		margin-bottom: 0.2rem;
 		font-size: 1rem;
 		font-weight: 300
 
