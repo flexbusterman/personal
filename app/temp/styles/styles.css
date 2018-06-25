@@ -1308,7 +1308,7 @@ Instead edit gulp/templates/sprite */
   font-size: 0.7rem;
   font-weight: 250;
   /*background-color: #070707;*/
-  color: #222;
+  color: #333;
   padding: 0.5rem 1rem;
   text-align: center;
   height: 100%;
@@ -1321,12 +1321,14 @@ Instead edit gulp/templates/sprite */
     font-weight: 200;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .site-footer__text {
-      display: inline;
+      text-align: right;
+      font-weight: 300;
       margin-bottom: 0;
-      margin-right: 1.4rem
+      margin-right: 1.4rem;
+      font-size: 1rem
   }
   }
 
