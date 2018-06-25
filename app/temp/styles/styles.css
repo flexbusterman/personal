@@ -1857,16 +1857,16 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 530px) {
 
 .music__images-augustin {
-			-webkit-transform: translateX(-27%);
-			        transform: translateX(-27%)
+			-webkit-transform: translateX(-45%);
+			        transform: translateX(-45%)
 	}
   }
 
 @media (min-width: 800px) {
 
 .music__images-augustin {
-			-webkit-transform: translateX(-5%);
-			        transform: translateX(-5%)
+			-webkit-transform: translateX(-40%);
+			        transform: translateX(-40%)
 	}
   }
 
@@ -1889,8 +1889,8 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 530px) {
 
 .music__images-chicagojazzen {
-			-webkit-transform: translateX(-10%);
-			        transform: translateX(-10%)
+			-webkit-transform: translateX(-15%);
+			        transform: translateX(-15%)
 
 	}
   }
@@ -1898,8 +1898,8 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 800px) {
 
 .music__images-chicagojazzen {
-			-webkit-transform: translateX(0);
-			        transform: translateX(0);
+			-webkit-transform: translateX(-0%);
+			        transform: translateX(-0%);
 			height: auto;
 			width: 100%
 
@@ -1909,27 +1909,23 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 1010px) {
 
 .music__images-chicagojazzen {
-			-webkit-transform: translateY(-10%);
-			        transform: translateY(-10%)
+			-webkit-transform: translateX(0%) translateY(-20%);
+			        transform: translateX(0%) translateY(-20%)
 
 	}
   }
 
 .music__images-dammit {
-		-webkit-transform: translateX(0);
-		        transform: translateX(0);
-		height: 105%;
-		width: auto;
+		-webkit-transform: translateX(-20%);
+		        transform: translateX(-20%);
 
 	}
 
 @media (min-width: 530px) {
 
 .music__images-dammit {
-			width: 100%;
-			height: auto;
-			-webkit-transform: translateX(0);
-			        transform: translateX(0)
+			-webkit-transform: translateX(-5%) translateY(0%);
+			        transform: translateX(-5%) translateY(0%)
 
 	}
   }
@@ -1937,10 +1933,8 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 800px) {
 
 .music__images-dammit {
-			-webkit-transform: translateX(0%);
-			        transform: translateX(0%);
-			-webkit-transform: translateY(-5%);
-			        transform: translateY(-5%)
+			-webkit-transform: translateX(0%) translateY(0%);
+			        transform: translateX(0%) translateY(0%)
 
 	}
   }
@@ -1948,47 +1942,203 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 1010px) {
 
 .music__images-dammit {
-			-webkit-transform: translateX(0);
-			        transform: translateX(0);
-			-webkit-transform: translateY(-10%);
-			        transform: translateY(-10%);
+			width: 100%;
 			height: auto;
-	    	width: 100%
+			-webkit-transform: translateX(0%) translateY(-5%);
+			        transform: translateX(0%) translateY(-5%)
 
 	}
   }
 
 .music__images-flickstick {
 		-webkit-transform: translateY(0%) translateX(-70%);
-		        transform: translateY(0%) translateX(-70%)
+		        transform: translateY(0%) translateX(-70%);
 	}
+
+@media (min-width: 530px) {
+
+.music__images-flickstick {
+			-webkit-transform: translateX(-59%) translateY(0%);
+			        transform: translateX(-59%) translateY(0%)
+	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-flickstick {
+			-webkit-transform: translateX(-48%) translateY(0%);
+			        transform: translateX(-48%) translateY(0%)
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-flickstick {
+			width: 100%;
+			height: auto;
+			-webkit-transform: translateX(0%) translateY(-17%);
+			        transform: translateX(0%) translateY(-17%)
+	}
+  }
 
 .music__images-kantor {
 		-webkit-transform: translateY(0%) translateX(-30%);
-		        transform: translateY(0%) translateX(-30%)
+		        transform: translateY(0%) translateX(-30%);
+
 	}
+
+@media (min-width: 530px) {
+
+.music__images-kantor {
+			-webkit-transform: translateX(-25%) translateY(0%);
+			        transform: translateX(-25%) translateY(0%)
+
+	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-kantor {
+			-webkit-transform: translateX(-22%) translateY(0%);
+			        transform: translateX(-22%) translateY(0%)
+
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-kantor {
+			width: 100%;
+			height: auto;
+			-webkit-transform: translateX(0%) translateY(0%);
+			        transform: translateX(0%) translateY(0%)
+
+	}
+  }
 
 .music__images-krispr {
 		-webkit-transform: translateY(0%) translateX(-29%);
-		        transform: translateY(0%) translateX(-29%)
+		        transform: translateY(0%) translateX(-29%);
 	}
+
+@media (min-width: 530px) {
+
+.music__images-krispr {
+			-webkit-transform: translateX(-10%) translateY(0%);
+			        transform: translateX(-10%) translateY(0%)
+	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-krispr {
+			width: 100%;
+			height: auto;
+			-webkit-transform: translateX(0%) translateY(0%);
+			        transform: translateX(0%) translateY(0%)
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-krispr {
+			-webkit-transform: translateX(0%) translateY(-10%);
+			        transform: translateX(0%) translateY(-10%)
+	}
+  }
 
 .music__images-riwen {
 		-webkit-transform: translateY(0%) translateX(-19%);
-		        transform: translateY(0%) translateX(-19%)
+		        transform: translateY(0%) translateX(-19%);
 	}
+
+@media (min-width: 530px) {
+
+.music__images-riwen {
+			-webkit-transform: translateX(-20%) translateY(0%);
+			        transform: translateX(-20%) translateY(0%)
+	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-riwen {
+			-webkit-transform: translateX(-20%) translateY(0%);
+			        transform: translateX(-20%) translateY(0%)
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-riwen {
+			width: 100%;
+			height: auto;
+			-webkit-transform: translateX(0%) translateY(0%);
+			        transform: translateX(0%) translateY(0%)
+	}
+  }
 
 .music__images-lithner {
 		-webkit-transform: translateY(0%) translateX(-30%);
-		        transform: translateY(0%) translateX(-30%)
-
+		        transform: translateY(0%) translateX(-30%);
 	}
+
+@media (min-width: 530px) {
+
+.music__images-lithner {
+			-webkit-transform: translateX(-23%) translateY(0%);
+			        transform: translateX(-23%) translateY(0%)
+	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-lithner {
+			-webkit-transform: translateX(-15%) translateY(0%);
+			        transform: translateX(-15%) translateY(0%)
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-lithner {
+			width: 100%;
+			height: auto;
+			-webkit-transform: translateX(0%) translateY(-40%);
+			        transform: translateX(0%) translateY(-40%)
+	}
+  }
 
 .music__images-x {
-		-webkit-transform: translateY(0%) translateX(-30%);
-		        transform: translateY(0%) translateX(-30%)
-
+		-webkit-transform: translateY(0%) translateX(-25%);
+		        transform: translateY(0%) translateX(-25%);
 	}
+
+@media (min-width: 530px) {
+
+.music__images-x {
+			-webkit-transform: translateX(-20%) translateY(0%);
+			        transform: translateX(-20%) translateY(0%)
+	}
+  }
+
+@media (min-width: 800px) {
+
+.music__images-x {
+			-webkit-transform: translateX(-15%) translateY(0%);
+			        transform: translateX(-15%) translateY(0%)
+	}
+  }
+
+@media (min-width: 1010px) {
+
+.music__images-x {
+			width: 100%;
+			height: auto;
+			-webkit-transform: translateX(0%) translateY(-15%);
+			        transform: translateX(0%) translateY(-15%)
+	}
+  }
 
 .music__images-opaque {
 		opacity: 1;
