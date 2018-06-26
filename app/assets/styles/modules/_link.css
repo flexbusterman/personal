@@ -2,10 +2,6 @@
 
 	font-family: "Raleway";
   	text-decoration: none;
-
-  	/* test */
-	/*position: relative;*/
-
 	z-index: 5;
 	color: #aaa;
 	font-size: 1.3rem;
@@ -20,18 +16,18 @@
 	}
 
 	@mixin atSmall {
-		font-size: 1.5rem;
-		line-height: 2rem;
+		font-size: 1.1rem;
+		line-height: 1.7rem;
 	}
 
 	@mixin atMedium {
-		font-size: 1.55rem;
-		line-height: 2.2rem;
+		font-size: 1.3rem;
+		line-height: 2rem;
 	}
 
 	@mixin atLarge {
-		font-size: 2rem;
-		line-height: 3rem;
+		font-size: 1.4rem;
+		line-height: 2.4rem;
 	}
 
 

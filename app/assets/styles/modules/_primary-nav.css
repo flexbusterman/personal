@@ -11,7 +11,7 @@
   }
 
   @mixin atSmall {
-    margin-left: 2vw;
+    margin-left: 3vw;
   }
 
   @mixin atMedium {
@@ -19,7 +19,7 @@
   }
 
   @mixin atLarge {
-    margin-left: 2.5vw;
+    margin-left: 3vw;
     margin-bottom: 3px;
   }
 
@@ -70,16 +70,19 @@
     /*background-color: rgba(0,0,0, .5);*/
 
     @mixin atSmall {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       float: left;
     }
     
     @mixin atMedium {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
     }
 
    @mixin atLarge {
-      font-size: 2.5rem;
+      padding-left: 0.2rem;
+      padding-top: 0.4rem;
+      letter-spacing: 0.15rem;
+      font-size: 1.5rem;
     }
 
     /*@mixin atLarge {

@@ -14,13 +14,13 @@
   }
 
   @mixin atSmall {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 100;
   }
 
   @mixin atMedium {
     padding: 0.2rem;
-    font-size: 1.35rem;
+    font-size: 1.0rem;
     font-weight: 100;
   }
   
@@ -29,7 +29,7 @@
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 1.0rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 100;
   }
 
@@ -115,18 +115,18 @@
     padding-bottom: 1.5rem;
 
     @mixin atSmall {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       line-height: 1.2rem;
       margin-bottom: 8vh;
     }
 
     @mixin atMedium {
-      font-size: 1.35rem;
+      font-size: 1.2rem;
     }
     
     @mixin atLarge {
-      font-size: 1.6rem;
-      line-height: 1.5rem;
+      font-size: 1.3rem;
+      line-height: 1.4rem;
     }
 
     a {
@@ -142,21 +142,21 @@
 	  }
 
 	  span.mono {
-	    font-family: "Cutive Mono";
-	    font-size: 0.85rem;
-	    font-weight: 600;
+	    font-family: "Roboto";
+	    /*font-size: 0.85rem;*/
+	    font-weight: 350;
 
       @mixin atSmall {
-        font-size: 1.4rem;
+        /*font-size: 1.4rem;*/
         line-height: 1.2rem;
       }
 
       @mixin atMedium {
-        font-size: 1.55rem;
+        /*font-size: 1.55rem;*/
       }
       
       @mixin atLarge {
-        font-size: 1.8rem;
+        /*font-size: 1.8rem;*/
       }
 
 	  }
@@ -164,6 +164,7 @@
     strong {
       display: inline-block;
       margin-top: 15px;
+      color: #bbb;
       font-family: "Raleway";
       font-weight: 440;
     }

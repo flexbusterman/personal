@@ -31,11 +31,11 @@
 		transform: translateX(-50%);
 
 		@mixin atSmall {
-			transform: translateX(-45%);
+			transform: translateX(-40%);
 		}
 
 		@mixin atMedium {
-			transform: translateX(-40%);
+			transform: translateX(-24%);
 		}
 
 		@mixin atLarge {
@@ -49,7 +49,7 @@
 		transform: translateX(-25%);
 
 		@mixin atSmall {
-			transform: translateX(-15%);
+			transform: translateX(-10%);
 		}
 
 		@mixin atMedium {
@@ -68,11 +68,11 @@
 		transform: translateX(-20%);
 
 		@mixin atSmall {
-			transform: translateX(-5%) translateY(0%);
+			transform: translateX(-15%) translateY(0%);
 		}
 
 		@mixin atMedium {
-			transform: translateX(0%) translateY(0%);
+			transform: translateX(-8%) translateY(0%);
 		}
 
 		@mixin atLarge {
@@ -87,17 +87,17 @@
 		transform: translateY(0%) translateX(-70%);
 
 		@mixin atSmall {
-			transform: translateX(-59%) translateY(0%);
+			transform: translateX(-47%) translateY(0%);
 		}
 
 		@mixin atMedium {
-			transform: translateX(-48%) translateY(0%);
+			transform: translateX(-33%) translateY(0%);
 		}
 
 		@mixin atLarge {
 			width: 100%;
 			height: auto;
-			transform: translateX(0%) translateY(-17%);
+			transform: translateX(0%) translateY(0%);
 		}
 	}
 
@@ -105,11 +105,11 @@
 		transform: translateY(0%) translateX(-30%);
 
 		@mixin atSmall {
-			transform: translateX(-25%) translateY(0%);
+			transform: translateX(-20%) translateY(0%);
 		}
 
 		@mixin atMedium {
-			transform: translateX(-22%) translateY(0%);
+			transform: translateX(-12%) translateY(0%);
 		}
 
 		@mixin atLarge {
@@ -124,17 +124,19 @@
 		transform: translateY(0%) translateX(-29%);
 
 		@mixin atSmall {
-			transform: translateX(-10%) translateY(0%);
+			width: 100%;
+			height: auto;
+			transform: translateX(0%) translateY(-10%);
 		}
 
 		@mixin atMedium {
 			width: 100%;
 			height: auto;
-			transform: translateX(0%) translateY(0%);
+			transform: translateX(0%) translateY(-12%);
 		}
 
 		@mixin atLarge {
-			transform: translateX(0%) translateY(-10%);
+			transform: translateX(0%) translateY(-14%);
 		}
 	}
 
@@ -146,7 +148,7 @@
 		}
 
 		@mixin atMedium {
-			transform: translateX(-20%) translateY(0%);
+			transform: translateX(-18%) translateY(0%);
 		}
 
 		@mixin atLarge {
@@ -157,20 +159,20 @@
 	}
 
 	&__images-lithner {
-		transform: translateY(0%) translateX(-30%);
+		transform: translateY(0%) translateX(-20%);
 
 		@mixin atSmall {
-			transform: translateX(-23%) translateY(0%);
+			transform: translateX(-13%) translateY(0%);
 		}
 
 		@mixin atMedium {
-			transform: translateX(-15%) translateY(0%);
+			width: 100%;
+			height: auto;
+			transform: translateX(0%) translateY(0%);
 		}
 
 		@mixin atLarge {
-			width: 100%;
-			height: auto;
-			transform: translateX(0%) translateY(-40%);
+			transform: translateX(0%) translateY(-35%);
 		}
 	}
 

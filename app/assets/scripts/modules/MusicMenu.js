@@ -9,6 +9,7 @@ photoCred.kantor = ["Kantor","#fff"];
 photoCred.krispr = ["Malin Strömberg","#fff"];
 photoCred.riwen = ["Henrik Wiklund","#fff"];
 photoCred.therese = ["Selma Grönlund","#fff"];
+photoCred.augustin = ["Ulrika Lindell", "#fff"];
 
 $(function() {
 	var textContainers = $("div.music-text-row");
@@ -16,7 +17,7 @@ $(function() {
 	var links = $('a.link').click(function() {
 		
 		var currentLinkTxt = $(this).text().toLowerCase().split(" ");
-		var currentLinkIndex = $('a.link').index(this)
+		var currentLinkIndex = $('a.link').index(this);
 	
 		// update link classes
 		links.removeClass('link-active');
@@ -27,8 +28,6 @@ $(function() {
 		textContainers.addClass("row--hidden")
 		$(textContainers[currentLinkIndex]).removeClass("row--hidden")
 		$(textContainers[currentLinkIndex]).addClass("row--visible")
-
-		// console.log(images[currentLinkIndex])
 
 		// update images classes
 		images.removeClass("music__images-opaque")

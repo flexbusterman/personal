@@ -34,22 +34,22 @@
     width: auto; 
 
     @mixin atSmall {
-      /*visibility: visible;*/
+      visibility: visible;
       max-width: 10px;
       max-height: 10px;
-      margin-right: 38px;
-      transform: scale(0.32) translateY(0px);
+      margin-right: 0px;
+      transform: scale(0.23) translateY(0px);
     }
 
     @mixin atMedium {
       visibility: visible;
-      margin-right: 50px;
-      transform: scale(0.35) translateY(0px);
+      margin-right: 25px;
+      transform: scale(0.27) translateY(0px);
     }
 
     @mixin atLarge {
-      margin-right: 100px;
-      transform: scale(0.42) translateY(4px);
+      margin-right: 40px;
+      transform: scale(0.32) translateY(4px);
     }
   }
 

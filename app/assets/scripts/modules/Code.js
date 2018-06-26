@@ -1,5 +1,9 @@
 import $ from 'jquery';
 
+var photoCred = {};
+photoCred.augustin = ["Ulrika Lindell", "#fff"];
+photoCred.krispr = ["Malin Strömberg","#fff"];
+
 $(function() {
 	var textContainers = $("div.music-text-row");
 	var images = $('div.music').children('img');
@@ -9,7 +13,6 @@ $(function() {
 	var codeLinks = $('a.code-link').click(function() {
 		
 		var currentLinkTxt = $(this).text().toLowerCase().split(" ");
-
 
 		// TODO: This shouldn't be hard coded
 		if (currentLinkTxt == "augustin") {
@@ -35,6 +38,9 @@ $(function() {
 		// update images classes
 		images.removeClass("music__images-opaque")
 		$(images[currentLinkIndex]).addClass("music__images-opaque");
+
+		$("div.photo-cred").html("Photo: "+photoCred[currentLinkTxt[0]][0]);
+		$("div.photo-cred").css("color", photoCred[currentLinkTxt[0]][1]);
 
    });
 });
