@@ -571,6 +571,19 @@ ul {
     height: 100%;
   }
 
+.page-section__full-height--taller-if-large {
+    height: 100%;
+
+  }
+
+@media (min-width: 1010px) {
+
+.page-section__full-height--taller-if-large {
+      height: 105vh
+
+  }
+  }
+
 .page-section__dark {
     background-color: rgba(0,0,0,.90);
   }
@@ -727,6 +740,13 @@ ul {
 
 .row--less-l-margin-if-large {
       margin-left: 5vw
+  }
+  }
+
+@media (min-width: 1010px) {
+
+.row--small-t-margin-if-large {
+      margin-top: 3%
   }
   }
 

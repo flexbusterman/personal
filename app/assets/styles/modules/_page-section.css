@@ -23,6 +23,14 @@
     height: 100%;
   }
 
+  &__full-height--taller-if-large {
+    height: 100%;
+    @mixin atLarge {
+      height: 105vh;
+    }
+
+  }
+
   &__dark {
     background-color: rgba(0,0,0,.90);
   }
